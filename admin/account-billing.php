@@ -1,20 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>Deals and Offer</title>
-        <link href="css/datatables.style.css" rel="stylesheet" />
-        <link href="css/litepicker.css" rel="stylesheet" />
-        <link href="css/styles.css" rel="stylesheet" />
-        <link rel="icon" type="image/x-icon" href="assets/img/favicon.png" />
-        <script data-search-pseudo-elements defer src="vendor/fontawesome-free-6.5.2-web/js/all.min.js"></script>
-        <script src="node_modules/feather-icons/dist/feather.min.js"></script>
-    </head>
-    <body class="nav-fixed">
+<?php
+
+
+        $title = 'Reports';
+        require_once('include/head.php');
+
+    ?>
+<body class="nav-fixed">
+   <?php
+   require_once('include/navbar.php');
+   ?>
         <nav class="topnav navbar navbar-expand shadow justify-content-between justify-content-sm-start navbar-light bg-white" id="sidenavAccordion">
             <!-- Sidenav Toggle Button-->
             <button class="btn btn-icon btn-transparent-dark order-1 order-lg-0 me-2 ms-lg-2 me-lg-0" id="sidebarToggle"><i data-feather="menu"></i></button>
@@ -25,22 +19,7 @@
             <a class="navbar-brand pe-3 ps-4 ps-lg-2" href="reports.html">Cuadrito Bakeshop</a>
             <!-- Navbar Search Input-->
             <!-- * * Note: * * Visible only on and above the lg breakpoint-->
-
-
-             <!-- SEARCH BAR
-            <form class="form-inline me-auto d-none d-lg-block me-3">
-                <div class="input-group input-group-joined input-group-solid">
-                    <input class="form-control pe-0" type="search" placeholder="Search" aria-label="Search" />
-                    <div class="input-group-text"><i data-feather="search"></i></div>
-                </div>
-            </form>
-        -->
-            <!-- Navbar Items-->
             <ul class="navbar-nav align-items-center ms-auto">
-               
-                <!-- Navbar Search Dropdown-->
-                <!-- * * Note: * * Visible only below the lg breakpoint-->
-                
                 <!-- Alerts Dropdown-->
                 <li class="nav-item dropdown no-caret d-none d-sm-block me-3 dropdown-notifications">
                     <a class="btn btn-icon btn-transparent-dark dropdown-toggle" id="navbarDropdownAlerts" href="javascript:void(0);" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i data-feather="bell"></i></a>
@@ -130,6 +109,7 @@
                             </a>
                             <!-- Sidenav Menu Heading (Core)-->
                             <div class="sidenav-menu-heading"></div>
+                            
                             <!-- Sidenav Accordion (Dashboard)-->
                             
                             <a class="nav-link collapsed" href="javascript:void(0);" data-bs-toggle="collapse" data-bs-target="#collapseDashboards" aria-expanded="false" aria-controls="collapseDashboards">
@@ -185,61 +165,191 @@
             </div>
             <div id="layoutSidenav_content">
                 <main>
-                    <header class="page-header page-header-dark bg-gradient-primary-to-secondary pb-10">
+                    <header class="page-header page-header-compact page-header-light border-bottom bg-white mb-4">
                         <div class="container-xl px-4">
-                            <div class="page-header-content pt-4">
-                                <div class="row align-items-center justify-content-between">
-                                    <div class="col-auto mt-4">
+                            <div class="page-header-content">
+                                <div class="row align-items-center justify-content-between pt-3">
+                                    <div class="col-auto mb-3">
                                         <h1 class="page-header-title">
-                                            <div class="page-header-icon"><i data-feather="tag"></i></div>
-                                            Deals and Offer
+                                            <div class="page-header-icon"><i data-feather="user"></i></div>
+                                            Account Settings - Billing
                                         </h1>
-                                        <div class="page-header-subtitle"></div>
                                     </div>
-                                    <!-- 
-                                    <div class="col-12 col-xl-auto mt-4">
-                                        <div class="input-group input-group-joined border-0" style="width: 16.5rem">
-                                            <span class="input-group-text"><i class="text-primary" data-feather="calendar"></i></span>
-                                            <input class="form-control ps-0 pointer" id="litepickerRangePlugin" placeholder="Select date range..." />
-                                        </div>
-                                        
-                                    </div>
-                                    -->
                                 </div>
                             </div>
                         </div>
                     </header>
-                    <div class="container-xl px-4">
-                        <div class="card mt-n10">
-                            
-                            <div class="card-body"> 
-                                
+                    <!-- Main page content-->
+                    <div class="container-xl px-4 mt-4">
+                        <!-- Account page navigation-->
+                        <nav class="nav nav-borders">
+                            <a class="nav-link ms-0" href="account-profile.html">Profile</a>
+                            <a class="nav-link active" href="account-billing.html">Billing</a>
+                            <a class="nav-link" href="account-security.html">Security</a>
+                           
+                        </nav>
+                        <hr class="mt-0 mb-4" />
+                        <div class="row">
+                             <!--
+                            <div class="col-lg-4 mb-4">
+                                 Billing card 1
+                                <div class="card h-100 border-start-lg border-start-primary">
+                                    <div class="card-body">
+                                        <div class="small text-muted">Current monthly bill</div>
+                                        <div class="h3">$20.00</div>
+                                        <a class="text-arrow-icon small" href="#!">
+                                            Switch to yearly billing
+                                            <i data-feather="arrow-right"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 mb-4">
+                                 Billing card 2--
+                                <div class="card h-100 border-start-lg border-start-secondary">
+                                    <div class="card-body">
+                                        <div class="small text-muted">Next payment due</div>
+                                        <div class="h3">July 15</div>
+                                        <a class="text-arrow-icon small text-secondary" href="#!">
+                                            View payment history
+                                            <i data-feather="arrow-right"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 mb-4">
+                                 Billing card 3--
+                                <div class="card h-100 border-start-lg border-start-success">
+                                    <div class="card-body">
+                                        <div class="small text-muted">Current plan</div>
+                                        <div class="h3 d-flex align-items-center">Freelancer</div>
+                                        <a class="text-arrow-icon small text-success" href="#!">
+                                            Upgrade plan
+                                            <i data-feather="arrow-right"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    -->
+                        <!-- Payment methods card-->
+                        <div class="card card-header-actions mb-4">
+                            <div class="card-header">
+                                Payment Methods
+                                <button class="btn btn-sm btn-primary" type="button">Add Payment Method</button>
+                            </div>
+                            <div class="card-body px-0">
+                                <!-- Payment method 1-->
+                                <div class="d-flex align-items-center justify-content-between px-4">
+                                    <div class="d-flex align-items-center">
+                                        <i class="fab fa-cc-visa fa-2x cc-color-visa"></i>
+                                        <div class="ms-4">
+                                            <div class="small">Visa ending in 1234</div>
+                                            <div class="text-xs text-muted">Expires 04/2024</div>
+                                        </div>
+                                    </div>
+                                    <div class="ms-4 small">
+                                        <div class="badge bg-light text-dark me-3">Default</div>
+                                        <a href="#!">Edit</a>
+                                    </div>
+                                </div>
+                                <hr />
+                                <!-- Payment method 2-->
+                                <div class="d-flex align-items-center justify-content-between px-4">
+                                    <div class="d-flex align-items-center">
+                                        <i class="fab fa-cc-mastercard fa-2x cc-color-mastercard"></i>
+                                        <div class="ms-4">
+                                            <div class="small">Mastercard ending in 5678</div>
+                                            <div class="text-xs text-muted">Expires 05/2022</div>
+                                        </div>
+                                    </div>
+                                    <div class="ms-4 small">
+                                        <a class="text-muted me-3" href="#!">Make Default</a>
+                                        <a href="#!">Edit</a>
+                                    </div>
+                                </div>
+                                <hr />
+                                <!-- Payment method 3-->
+                                <div class="d-flex align-items-center justify-content-between px-4">
+                                    <div class="d-flex align-items-center">
+                                        <i class="fab fa-cc-amex fa-2x cc-color-amex"></i>
+                                        <div class="ms-4">
+                                            <div class="small">American Express ending in 9012</div>
+                                            <div class="text-xs text-muted">Expires 01/2026</div>
+                                        </div>
+                                    </div>
+                                    <div class="ms-4 small">
+                                        <a class="text-muted me-3" href="#!">Make Default</a>
+                                        <a href="#!">Edit</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Billing history card-->
+                        <div class="card mb-4">
+                            <div class="card-header">Billing History</div>
+                            <div class="card-body p-0">
+                                <!-- Billing history table-->
+                                <div class="table-responsive table-billing-history">
+                                    <table class="table mb-0">
+                                        <thead>
+                                            <tr>
+                                                <th class="border-gray-200" scope="col">Transaction ID</th>
+                                                <th class="border-gray-200" scope="col">Date</th>
+                                                <th class="border-gray-200" scope="col">Amount</th>
+                                                <th class="border-gray-200" scope="col">Status</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>#39201</td>
+                                                <td>06/15/2021</td>
+                                                <td>$29.99</td>
+                                                <td><span class="badge bg-light text-dark">Pending</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>#38594</td>
+                                                <td>05/15/2021</td>
+                                                <td>$29.99</td>
+                                                <td><span class="badge bg-success">Paid</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>#38223</td>
+                                                <td>04/15/2021</td>
+                                                <td>$29.99</td>
+                                                <td><span class="badge bg-success">Paid</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>#38125</td>
+                                                <td>03/15/2021</td>
+                                                <td>$29.99</td>
+                                                <td><span class="badge bg-success">Paid</span></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </main>
-                    <footer class="footer-admin mt-auto footer-light">
-                        <div class="container-xl px-4">
-                            <div class="row">
-                                <div class="col-md-6 small">Copyright &copy; Your Website 2021</div>
-                                <div class="col-md-6 text-md-end small">
-                                    <a href="#!">Privacy Policy</a>
-                                    &middot;
-                                    <a href="#!">Terms &amp; Conditions</a>
-                                </div>
+                <footer class="footer-admin mt-auto footer-light">
+                    <div class="container-xl px-4">
+                        <div class="row">
+                            <div class="col-md-6 small">Copyright &copy; Your Website 2021</div>
+                            <div class="col-md-6 text-md-end small">
+                                <a href="#!">Privacy Policy</a>
+                                &middot;
+                                <a href="#!">Terms &amp; Conditions</a>
                             </div>
                         </div>
-                    </footer>
-                </div>
+                    </div>
+                </footer>
             </div>
-            <script src="vendor/bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
-            <script src="js/scripts.js"></script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js" crossorigin="anonymous"></script>
-            <script src="assets/demo/chart-area-demo.js"></script>
-            <script src="assets/demo/chart-bar-demo.js"></script>
-            <script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest" crossorigin="anonymous"></script>
-            <script src="js/datatables/datatables-simple-demo.js"></script>
-            <script src="https://cdn.jsdelivr.net/npm/litepicker/dist/bundle.js" crossorigin="anonymous"></script>
-            <script src="js/litepicker.js"></script>
-        </body>
-    </html>
+        </div>
+    </body>
+    <?php
+    
+    require_once('include/scripts.php');
+
+    ?>
+</html>
