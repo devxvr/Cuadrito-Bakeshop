@@ -69,18 +69,7 @@
                                                             <th>Actions</th>
                                                         </tr>
                                                     </thead>
-                                                    <tfoot>
-                                                        <tr>
-                                                            <th>Product ID</th>
-                                                            <th>Product Name</th>
-                                                            <th>Flavor</th>
-                                                            <th>Price</th>
-                                                            <th>Date Added</th>
-                                                            <th>Status</th>
-                                                            <th>Disable Cake</th>
-                                                            <th>Actions</th>
-                                                        </tr>
-                                                    </tfoot>
+                                                   
                                                     <tbody>
                                                         <tr>
                                                             <td>1</td>
@@ -119,22 +108,14 @@
                                                 <table id="datatablesAdons">
                                                     <thead>
                                                         <tr>
-                                                            <th>Add-on ID</th>
-                                                            <th>Add-on Name</th>
+                                                            <th>Ad-On ID</th>
+                                                            <th>Ad-On Name</th>
                                                             <th>Price</th>
                                                             <th>Status</th>
                                                             <th>Actions</th>
                                                         </tr>
                                                     </thead>
-                                                    <tfoot>
-                                                        <tr>
-                                                            <th>Add-on ID</th>
-                                                            <th>Add-on Name</th>
-                                                            <th>Price</th>
-                                                            <th>Status</th>
-                                                            <th>Actions</th>
-                                                        </tr>
-                                                    </tfoot>
+                                                    
                                                     <tbody>
                                                         <tr>
                                                             <td>1</td>
