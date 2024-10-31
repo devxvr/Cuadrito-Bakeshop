@@ -1,0 +1,44 @@
+@font-face {
+    font-family: bayon;
+    src: url(../Fonts/Bayon/Bayon-Regular.ttf);
+  }
+  @font-face {
+    font-family: poppins;
+    src: url(../Fonts/Poppins/Poppins-Regular.ttf);
+  }
+  @font-face {
+    font-family: poppins-bold;
+    src: url(../Fonts/Poppins/Poppins-Bold.ttf);
+  }
+  
+  @font-face {
+    font-family: poppins-medium;
+    src: url(../Fonts/Poppins/Poppins-Medium.ttf);
+  }
+  @font-face {
+    font-family: anton;
+    src: url(../Fonts/Anton/Anton-Regular.ttf);
+  }
+  .poppins {
+    font-family: poppins, sans-serif;
+    letter-spacing: 1px;
+  }
+  .poppins-medium {
+    font-family: poppins-medium, sans-serif;
+    letter-spacing: 1px;
+  }
+  .poppins-medium-custom {
+    font-family: poppins-medium, sans-serif;
+
+    font-weight: 700;
+  }
+  .poppins-bold {
+    font-family: poppins-bold, sans-serif;
+    letter-spacing: 1px;
+  }
+  .bayon {
+    font-family: bayon, sans-serif;
+  }
+  .anton {
+    font-family: anton, sans-serif;
+  }

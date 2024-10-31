@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../admin/vendor/bootstrap-5.3.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css-files/mainCuadrito.css">
+    <link rel="stylesheet" href="./css-files/font.css">
+    <title>Landingpage</title>
+</head>
+
+<body>
+    <nav class="navbar header navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <div class="header-logo d-flex align-items-center">
+                <img href="#" src="./Cuadrito Images/logo.png" alt="logo" style="width: 50px;">
+                <div class="text-logo">
+                    <a href="#" class="CuadritoBakeshop-logo bayon ml-2 text-decoration-none font-brown">
+                        CUADRITO BAKESHOP
+                    </a>
+                </div>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+                aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                </ul>
+                <div class="d-flex flex-column justify-content-center">
+                    <div class="header-search d-flex align-items-center">
+                        <div class="search-container">
+                            <input id="searchInput" class="search-bar poppins font-3" type="search"
+                                placeholder="Search...">
+                            <button id="clear-button"
+                                class="clear-button align-content-center font-brown justify-content-center"
+                                onclick="clearSearch()">
+                                <ion-icon name="close-outline"></ion-icon>
+                            </button>
+                        </div>
+                        <div class="search-button">
+                            <a class="d-flex justify-content-center align-items-center"
+                                onclick="searchItems()"><ion-icon class="font-brown search-magnifying"
+                                    name="search-outline"></ion-icon></a>
+                        </div>
+                    </div>
+                    <ul class="navbar-nav d-flex flex-row align-items-center justify-content-center bayon font-2">
+                        <li class="nav-item me-3">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item ms-3 me-3 dropdown-center position-relative">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Pastry
+                            </a>
+                            <ul class="dropdown-menu font-brown position-absolute start-0 top-100 z-1">
+                                <li><a class="dropdown-item font-brown" href="#cakes">Cakes</a></li>
+                                <li><a class="dropdown-item font-brown" href="#special">Specials</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item font-brown" href="#">Customize Your Own Cake!</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item ms-3 me-3 d-flex flex-row align-items-center">
+                            <ion-icon class=" font-brown font-2" name="notifications-outline"></ion-icon>
+                            <a class="nav-link" href="#">Notifications</a>
+                        </li>
+                        <li class="nav-item font-4 d-flex align-items-center font-brown">
+                            <a class="d-flex align-items-center" href="#"><ion-icon name="cart-outline"></ion-icon></a>
+                        </li>
+                        <li class="nav-item ms-3 d-flex flex-column align-items-center">
+                            <a class="nav-link font-brown p-0 bb-1" aria-current="page" href="./login.html"
+                                onclick="storeAction('login')">Login</a>
+                            <a class="nav-link font-brown p-0" aria-current="page" href="./login.html"
+                                onclick="storeAction('signup')">SignUp</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="landing-section">
+        <div class="left-landing">
+            <img src="./Cuadrito Images/background.png" class="full-screen-image" alt="Background Image">
+            <div style="width: 50%; height: 230px;">
+                <h1 class="bayon font-xl cuadrito-brand">CUADRITO</h1>
+                <h1 class="bayon font-xl cuadrito-brand">BAKESHOP</h1>
+            </div>
+            <h1 class="bayon font-4 cuadrito-brand-p">GOV ALVAREZ AVE <br> ZAMBOANGA CITY</h1>
+            <div class="landing-buttons">
+                <button class="buy-now-btn rounded-5 poppins-bold pb-1 pt-1"><a href="#cakes"
+                        class="text-decoration-none font-white">BUY NOW!</a></button>
+                <button class="login-now-btn rounded-5 poppins-bold pb-1 pt-1"><a href="./login.html"
+                        class="text-decoration-none font-white">LOG IN</a></button>
+            </div>
+        </div>
+        <div class="right-landing">
+            <div id="carouselExampleCustom" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./Cuadrito Images/Item4.png" class="d-block w-100" alt="...4">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./Cuadrito Images/Item1.png" class="d-block w-100" alt="...1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./Cuadrito Images/Item2.png" class="d-block w-100" alt="...2">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCustom"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden brown">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCustom"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden brown">Next</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="products" id="cakes">
+        <div class="product-banner mt-3 poppins-bold searchable-item" id="product-banner-all">
+            <h4 class="font-brown">All Products</h4>
+        </div>
+        <div class="d-flex justify-content-center align-items-center flex-direction-column w-100 mt-3">
+            <div class="wrapper w-80">
+                <div class="box card rounded-6 shadow-card gray-bg searchable-item">
+                    <a href="#"
+                        class="label-1 btn cuadrito-color-brown z-1 position-absolute top-1 end-1 rounded-4 text-center">Best
+                        Seller</a>
+                    <img src="./Cuadrito Images/Item1.png" class="card-img-top" alt="...">
+                    <div class="card-body top-border position-relative"> <!-- Add position-relative here -->
+                        <a href="#"
+                            class="label btn cuadrito-color z-1 d-flex justify-content-center position-absolute top-0 start-1 translate-middle searchable-item"
+                            style="height: 30px; ">Ube</a>
+                        <div class="">
+                            <div class="d-flex flex-direction-row justify-content-between align-items-center">
+                                <p class="card-text font-1"> Whole (10X14)</p>
+                                <h5 class="card-title bold font-2">₱ 800</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box card rounded-6 shadow-card gray-bg searchable-item">
+                    <a
+                        class="label-1 btn cuadrito-color-brown z-1 position-absolute top-1 end-1 rounded-4 text-align-center">Best
+                        Seller</a>
+                    <img src="./Cuadrito Images/Item2.png" class="card-img-top" alt="...">
+                    <div class="card-body top-border position-relative"> <!-- Add position-relative here -->
+                        <a href="#"
+                            class="label btn cuadrito-color z-1 d-flex justify-content-center position-absolute top-0 start-1 translate-middle searchable-item"
+                            style="height: 30px; ">Yema</a>
+                        <div class="">
+                            <div class="d-flex flex-direction-row justify-content-between align-items-center">
+                                <p class="card-text font-1"> Whole (10X14)</p>
+                                <h5 class="card-title bold font-2">₱ 800</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box card rounded-6 shadow-card gray-bg searchable-item">
+                    <a
+                        class="label-1 btn cuadrito-color-brown z-1 position-absolute top-1 end-1 rounded-4 text-align-center">Best
+                        Seller</a>
+                    <img src="./Cuadrito Images/Item3.png" class="card-img-top" alt="...">
+                    <div class="card-body top-border position-relative"> <!-- Add position-relative here -->
+                        <a href="#"
+                            class="label btn cuadrito-color z-1 d-flex justify-content-center position-absolute top-0 start-1 translate-middle searchable-item"
+                            style="height: 30px; ">Ube</a>
+                        <div class="">
+                            <div class="d-flex flex-direction-row justify-content-between align-items-center">
+                                <p class="card-text font-1"> Whole (10X14)</p>
+                                <h5 class="card-title bold font-2">₱ 800</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box card rounded-6 shadow-card gray-bg searchable-item">
+                    <a
+                        class="label-1 btn cuadrito-color-brown z-1 position-absolute top-1 end-1 rounded-4 text-align-center">Best
+                        Seller</a>
+                    <img src="./Cuadrito Images/Item4.png" class="card-img-top" alt="...">
+                    <div class="card-body top-border position-relative"> <!-- Add position-relative here -->
+                        <a href="#"
+                            class="label btn cuadrito-color z-1 d-flex justify-content-center position-absolute top-0 start-1 translate-middle searchable-item"
+                            style="height: 30px; ">Chocolate</a>
+                        <div class="">
+                            <div class="d-flex flex-direction-row justify-content-between align-items-center">
+                                <p class="card-text font-1"> Whole (10X14)</p>
+                                <h5 class="card-title bold font-2">₱ 800</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box card rounded-6 shadow-card gray-bg searchable-item">
+                    <a
+                        class="label-1 btn cuadrito-color-brown z-1 position-absolute top-1 end-1 rounded-4 text-align-center">Best
+                        Seller</a>
+                    <img src="./Cuadrito Images/Item2.png" class="card-img-top" alt="...">
+                    <div class="card-body top-border position-relative"> <!-- Add position-relative here -->
+                        <a href="#"
+                            class="label btn cuadrito-color z-1 d-flex justify-content-center position-absolute top-0 start-1 translate-middle searchable-item"
+                            style="height: 30px; ">Yema</a>
+                        <div class="">
+                            <div class="d-flex flex-direction-row justify-content-between align-items-center">
+                                <p class="card-text font-1"> Whole (10X14)</p>
+                                <h5 class="card-title bold font-2">₱ 800</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box card rounded-6 shadow-card gray-bg searchable-item">
+                    <a
+                        class="label-1 btn cuadrito-color-brown z-1 position-absolute top-1 end-1 rounded-4 text-align-center">Best
+                        Seller</a>
+                    <img src="./Cuadrito Images/Item1.png" class="card-img-top" alt="...">
+                    <div class="card-body top-border position-relative"> <!-- Add position-relative here -->
+                        <a href="#"
+                            class="label btn cuadrito-color z-1 d-flex justify-content-center position-absolute top-0 start-1 translate-middle searchable-item"
+                            style="height: 30px; ">Ube</a>
+                        <div class="">
+                            <div class="d-flex flex-direction-row justify-content-between align-items-center">
+                                <p class="card-text font-1"> Whole (10X14)</p>
+                                <h5 class="card-title bold font-2">₱ 800</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box card rounded-6 shadow-card gray-bg searchable-item">
+                    <a
+                        class="label-1 btn cuadrito-color-brown z-1 position-absolute top-1 end-1 rounded-4 text-align-center">Best
+                        Seller</a>
+                    <img src="./Cuadrito Images/Item2.png" class="card-img-top" alt="...">
+                    <div class="card-body top-border position-relative"> <!-- Add position-relative here -->
+                        <a href="#"
+                            class="label btn cuadrito-color z-1 d-flex justify-content-center position-absolute top-0 start-1 translate-middle searchable-item"
+                            style="height: 30px; ">Yema</a>
+                        <div class="">
+                            <div class="d-flex flex-direction-row justify-content-between align-items-center">
+                                <p class="card-text font-1"> Whole (10X14)</p>
+                                <h5 class="card-title bold font-2">₱ 800</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box card rounded-6 shadow-card gray-bg searchable-item">
+                    <a
+                        class="label-1 btn cuadrito-color-brown z-1 position-absolute top-1 end-1 rounded-4 text-align-center">Best
+                        Seller</a>
+                    <img src="./Cuadrito Images/Item3.png" class="card-img-top" alt="...">
+                    <div class="card-body top-border position-relative"> <!-- Add position-relative here -->
+                        <a href="#"
+                            class="label btn cuadrito-color z-1 d-flex justify-content-center position-absolute top-0 start-1 translate-middle searchable-item"
+                            style="height: 30px; ">Ube</a>
+                        <div class="">
+                            <div class="d-flex flex-direction-row justify-content-between align-items-center">
+                                <p class="card-text font-1"> Whole (10X14)</p>
+                                <h5 class="card-title bold font-2">₱ 800</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box card rounded-6 shadow-card gray-bg searchable-item">
+                    <a
+                        class="label-1 btn cuadrito-color-brown z-1 position-absolute top-1 end-1 rounded-4 text-align-center">Best
+                        Seller</a>
+                    <img src="./Cuadrito Images/Item4.png" class="card-img-top" alt="...">
+                    <div class="card-body top-border position-relative"> <!-- Add position-relative here -->
+                        <a href="#"
+                            class="label btn cuadrito-color z-1 d-flex justify-content-center position-absolute top-0 start-1 translate-middle searchable-item"
+                            style="height: 30px; ">Chocolate</a>
+                        <div class="">
+                            <div class="d-flex flex-direction-row justify-content-between align-items-center">
+                                <p class="card-text font-1"> Whole (10X14)</p>
+                                <h5 class="card-title bold font-2">₱ 800</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box card rounded-6 shadow-card gray-bg searchable-item">
+                    <a
+                        class="label-1 btn cuadrito-color-brown z-1 position-absolute top-1 end-1 rounded-4 text-align-center">Best
+                        Seller</a>
+                    <img src="./Cuadrito Images/Item2.png" class="card-img-top" alt="...">
+                    <div class="card-body top-border position-relative"> <!-- Add position-relative here -->
+                        <a href="#"
+                            class="label btn cuadrito-color z-1 d-flex justify-content-center position-absolute top-0 start-1 translate-middle searchable-item"
+                            style="height: 30px; ">Yema</a>
+                        <div class="">
+                            <div class="d-flex flex-direction-row justify-content-between align-items-center">
+                                <p class="card-text font-1"> Whole (10X14)</p>
+                                <h5 class="card-title bold font-2">₱ 800</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="products" id="special">
+        <div class="product-banner mt-3 poppins-bold searchable-item" id="product-banner-Special">
+            <h4 class="font-brown">Special Products</h4>
+        </div>
+        <div class="d-flex justify-content-center align-items-center flex-direction-column w-100 mt-3">
+            <div class="wrapper w-80">
+                <div class="box card rounded-6 shadow-card gray-bg searchable-item">
+                    <a href="#"
+                        class="label-1 btn cuadrito-color-brown z-1 position-absolute top-1 end-1 rounded-4 text-center">Best
+                        Seller</a>
+                    <img src="./Cuadrito Images/Item1.png" class="card-img-top" alt="...">
+                    <div class="card-body top-border position-relative"> <!-- Add position-relative here -->
+                        <a href="#"
+                            class="label btn cuadrito-color z-1 d-flex justify-content-center position-absolute top-0 start-1 translate-middle searchable-item"
+                            style="height: 30px; ">Ube</a>
+                        <div class="">
+                            <div class="d-flex flex-direction-row justify-content-between align-items-center">
+                                <p class="card-text font-1"> Whole (10X14)</p>
+                                <h5 class="card-title bold font-2">₱ 800</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box card rounded-6 shadow-card gray-bg searchable-item">
+                    <a
+                        class="label-1 btn cuadrito-color-brown z-1 position-absolute top-1 end-1 rounded-4 text-align-center">Best
+                        Seller</a>
+                    <img src="./Cuadrito Images/Item2.png" class="card-img-top" alt="...">
+                    <div class="card-body top-border position-relative"> <!-- Add position-relative here -->
+                        <a href="#"
+                            class="label btn cuadrito-color z-1 d-flex justify-content-center position-absolute top-0 start-1 translate-middle searchable-item"
+                            style="height: 30px; ">Yema</a>
+                        <div class="">
+                            <div class="d-flex flex-direction-row justify-content-between align-items-center">
+                                <p class="card-text font-1"> Whole (10X14)</p>
+                                <h5 class="card-title bold font-2">₱ 800</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box card rounded-6 shadow-card gray-bg searchable-item">
+                    <a
+                        class="label-1 btn cuadrito-color-brown z-1 position-absolute top-1 end-1 rounded-4 text-align-center">Best
+                        Seller</a>
+                    <img src="./Cuadrito Images/Item3.png" class="card-img-top" alt="...">
+                    <div class="card-body top-border position-relative"> <!-- Add position-relative here -->
+                        <a href="#"
+                            class="label btn cuadrito-color z-1 d-flex justify-content-center position-absolute top-0 start-1 translate-middle searchable-item"
+                            style="height: 30px; ">Ube</a>
+                        <div class="">
+                            <div class="d-flex flex-direction-row justify-content-between align-items-center">
+                                <p class="card-text font-1"> Whole (10X14)</p>
+                                <h5 class="card-title bold font-2">₱ 800</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box card rounded-6 shadow-card gray-bg searchable-item">
+                    <a
+                        class="label-1 btn cuadrito-color-brown z-1 position-absolute top-1 end-1 rounded-4 text-align-center">Best
+                        Seller</a>
+                    <img src="./Cuadrito Images/Item4.png" class="card-img-top" alt="...">
+                    <div class="card-body top-border position-relative"> <!-- Add position-relative here -->
+                        <a href="#"
+                            class="label btn cuadrito-color z-1 d-flex justify-content-center position-absolute top-0 start-1 translate-middle searchable-item"
+                            style="height: 30px; ">Chocolate</a>
+                        <div class="">
+                            <div class="d-flex flex-direction-row justify-content-between align-items-center">
+                                <p class="card-text font-1"> Whole (10X14)</p>
+                                <h5 class="card-title bold font-2">₱ 800</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box card rounded-6 shadow-card gray-bg searchable-item">
+                    <a
+                        class="label-1 btn cuadrito-color-brown z-1 position-absolute top-1 end-1 rounded-4 text-align-center">Best
+                        Seller</a>
+                    <img src="./Cuadrito Images/Item2.png" class="card-img-top" alt="...">
+                    <div class="card-body top-border position-relative"> <!-- Add position-relative here -->
+                        <a href="#"
+                            class="label btn cuadrito-color z-1 d-flex justify-content-center position-absolute top-0 start-1 translate-middle searchable-item"
+                            style="height: 30px; ">Yema</a>
+                        <div class="">
+                            <div class="d-flex flex-direction-row justify-content-between align-items-center">
+                                <p class="card-text font-1"> Whole (10X14)</p>
+                                <h5 class="card-title bold font-2">₱ 800</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box card rounded-6 shadow-card gray-bg searchable-item">
+                    <a
+                        class="label-1 btn cuadrito-color-brown z-1 position-absolute top-1 end-1 rounded-4 text-align-center">Best
+                        Seller</a>
+                    <img src="./Cuadrito Images/Item1.png" class="card-img-top" alt="...">
+                    <div class="card-body top-border position-relative"> <!-- Add position-relative here -->
+                        <a href="#"
+                            class="label btn cuadrito-color z-1 d-flex justify-content-center position-absolute top-0 start-1 translate-middle searchable-item"
+                            style="height: 30px; ">Ube</a>
+                        <div class="">
+                            <div class="d-flex flex-direction-row justify-content-between align-items-center">
+                                <p class="card-text font-1"> Whole (10X14)</p>
+                                <h5 class="card-title bold font-2">₱ 800</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box card rounded-6 shadow-card gray-bg searchable-item">
+                    <a
+                        class="label-1 btn cuadrito-color-brown z-1 position-absolute top-1 end-1 rounded-4 text-align-center">Best
+                        Seller</a>
+                    <img src="./Cuadrito Images/Item2.png" class="card-img-top" alt="...">
+                    <div class="card-body top-border position-relative"> <!-- Add position-relative here -->
+                        <a href="#"
+                            class="label btn cuadrito-color z-1 d-flex justify-content-center position-absolute top-0 start-1 translate-middle searchable-item"
+                            style="height: 30px; ">Yema</a>
+                        <div class="">
+                            <div class="d-flex flex-direction-row justify-content-between align-items-center">
+                                <p class="card-text font-1"> Whole (10X14)</p>
+                                <h5 class="card-title bold font-2">₱ 800</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box card rounded-6 shadow-card gray-bg searchable-item">
+                    <a
+                        class="label-1 btn cuadrito-color-brown z-1 position-absolute top-1 end-1 rounded-4 text-align-center">Best
+                        Seller</a>
+                    <img src="./Cuadrito Images/Item3.png" class="card-img-top" alt="...">
+                    <div class="card-body top-border position-relative"> <!-- Add position-relative here -->
+                        <a href="#"
+                            class="label btn cuadrito-color z-1 d-flex justify-content-center position-absolute top-0 start-1 translate-middle searchable-item"
+                            style="height: 30px; ">Ube</a>
+                        <div class="">
+                            <div class="d-flex flex-direction-row justify-content-between align-items-center">
+                                <p class="card-text font-1"> Whole (10X14)</p>
+                                <h5 class="card-title bold font-2">₱ 800</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box card rounded-6 shadow-card gray-bg searchable-item">
+                    <a
+                        class="label-1 btn cuadrito-color-brown z-1 position-absolute top-1 end-1 rounded-4 text-align-center">Best
+                        Seller</a>
+                    <img src="./Cuadrito Images/Item4.png" class="card-img-top" alt="...">
+                    <div class="card-body top-border position-relative"> <!-- Add position-relative here -->
+                        <a href="#"
+                            class="label btn cuadrito-color z-1 d-flex justify-content-center position-absolute top-0 start-1 translate-middle searchable-item"
+                            style="height: 30px; ">Chocolate</a>
+                        <div class="">
+                            <div class="d-flex flex-direction-row justify-content-between align-items-center">
+                                <p class="card-text font-1"> Whole (10X14)</p>
+                                <h5 class="card-title bold font-2">₱ 800</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box card rounded-6 shadow-card gray-bg searchable-item">
+                    <a
+                        class="label-1 btn cuadrito-color-brown z-1 position-absolute top-1 end-1 rounded-4 text-align-center">Best
+                        Seller</a>
+                    <img src="./Cuadrito Images/Item2.png" class="card-img-top" alt="...">
+                    <div class="card-body top-border position-relative"> <!-- Add position-relative here -->
+                        <a href="#"
+                            class="label btn cuadrito-color z-1 d-flex justify-content-center position-absolute top-0 start-1 translate-middle searchable-item"
+                            style="height: 30px; ">damn</a>
+                        <div class="">
+                            <div class="d-flex flex-direction-row justify-content-between align-items-center">
+                                <p class="card-text font-1"> Whole (10X14)</p>
+                                <h5 class="card-title bold font-2">₱ 800</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br>
+    <!--Footer-->
+    <div class="about-us position-relative" id="about-us">
+        <div class="about-us-banner product-banner searchable-item">
+            <h1 class="font-white poppins font-2 about-us-p-3">About us</h1>
+        </div>
+        <img src="./Cuadrito Images/background-Image.png" class="full-screen-image-2" alt="Background Image">
+        <h1 class="font-brown anton font-5rem about-us-p">About</h1>
+        <h1 class="font-brown anton font-5rem about-us-p-2">us</h1>
+        <div class="container-about-us d-flex align-items-center m-0 p-0">
+            <div class="cuadrito-logo w-40 mt-5 mb-5">
+                <img src="./Cuadrito Images/logo.png" alt="logo" style="width: 200px;">
+                <div class="text">
+                    <p class="CuadritoBakeshop bayon">CUADRITO BAKESHOP</p>
+                </div>
+            </div>
+            <div class="about-us-info d-flex align-items-center justify-content-center flex-column w-80 mt-5 mb-5">
+                <p class="a-u-info poppins font-3 mb-3">
+                    Cuadrito Bakeshop has been a beloved fixture in Zamboanga City for the past 25 years. Originally
+                    founded by a passionate baker, the shop has grown from its humble beginnings on Gov. Alvarez St.
+                    into a trusted name in the community, known for its fresh and delicious cakes and pastries. The
+                    business has been passed down through the family, with the next generation now continuing the
+                    tradition of baking with love and care.
+                    <br><br>
+                    While the shop thrived on word-of-mouth for many years, Cuadrito Bakeshop is now stepping into the
+                    digital world. With the launch of its online ordering system, customers can easily order their
+                    favorite treats for any occasion, bringing the shop’s handcrafted goodness right to their doorstep.
+                </p>
+                <div class="d-flex justify-content-center flex-wrap">
+                    <!--<button class="learn-more-btn rounded-5 poppins-bold pb-1 pt-1 m-1"><a href="#learnMore"
+                            class="text-decoration-none font-white">Learn more...</a></button>-->
+                    <button class="customize-order-btn rounded-5 poppins-bold pb-1 pt-1 m-1"><a href="./Custom.html"
+                            class="text-decoration-none font-white">Customize Order</a></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="about-us-location" id="location">
+        <h1 class="font-brown anton font-5rem about-us-p">Loca</h1>
+        <h1 class="font-brown anton font-5rem about-us-p-4">tion</h1>
+        <div class="about-us-banner product-banner searchable-item">
+            <h1 class="font-white poppins font-2 about-us-p-3">Location</h1>
+        </div>
+        <div class="container-about-us d-flex align-items-center m-0 p-0 row">
+            <div class="d-flex justify-content-center align-content-center col-sm-6 mt-5 mb-5">
+                <iframe class="location-map"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d990.213883749274!2d122.07388894408786!3d6.907872315939888!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x325041fce97fb3ab%3A0xfb452d2e1adf3089!2s55%20Mayor%20Climaco%20Ave%2C%20Zamboanga%2C%20Zamboanga%20del%20Sur!5e0!3m2!1sen!2sph!4v1730100054818!5m2!1sen!2sph"
+                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="d-flex justify-content-center align-items-center flex-column col-sm-6">
+                <div class="m-3">
+                    <h1 class="font-brown poppins-bold font-4 d-flex align-items-center"><ion-icon class="me-2"
+                            name="phone-portrait-outline"></ion-icon>Pick Up or Delivery</h1>
+                    <ul class="poppins font-3 mb-3 ms-3">
+                        <li>Delivery at Buyer’s Expense</li>
+                        <li>Buyer to Book Delivery</li>
+                        <li>Inform Rider the Name in the Order form during Pick Up</li>
+                    </ul>
+                    </p>
+                    <h1 class="font-brown poppins-bold font-4 d-flex align-items-center"><ion-icon class="me-2"
+                            name="location"></ion-icon>Cuadrito Bakeshop</h1>
+                    <ul class="poppins font-3 mb-3 ms-5 list-unstyled">
+                        <li>09063671429</li>
+                        <li>Phoenix Gas Station, Governor Alvarez ST., Zamboanga City,
+                            Zamboanga Del Sur (Entrance to Grand Astoria Parking)</li>
+                    </ul>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="about-contact-us" id="contact-us">
+        <div class="w-30 p-0 contact-us-left-container">
+            <div class="contact-us-left d-flex justify-content-center align-items-center">
+                <img src="./Cuadrito Images/logo.png" alt="logo" style="width: 18vw;">
+            </div>
+        </div>
+        <div class="w-70 contact-us-right-container p-0 pb-5">
+            <div class="contact-us-right d-flex justify-content-center align-items-center flex-column p-0">
+                <div class="d-flex justify-content-center">
+                    <h2 class="font-brown anton mt-4 searchable-item">Contact Us</h2>
+                </div>
+                <div class="contact-detail d-flex justify-content-center row">
+                    <div class="contact-left  col-lg-5 p-0">
+                        <div class="d-flex flex-column align-items-center pe-1 pe-2-custom br-brown">
+                            <input class="input rounded-2 poppins-medium mb-2" type="text" placeholder="Email">
+                            <input class="input rounded-2 poppins-medium mb-2" type="text" placeholder="Full Name">
+                            <input class="input rounded-2 poppins-medium mb-2" type="text" placeholder="Contact Number">
+                            <textarea class="input-message rounded-2 poppins-medium mb-2 p-2" id="message"
+                                autocomplete="off" placeholder="Message" maxlength="1000" oninput="updateCounter()"
+                                rows="4"></textarea>
+                            <div class="w-90 d-flex justify-content-between">
+                                <small id="charCount" class="form-text text-muted">1000</small>
+                                <button class="submit-btn rounded-5 mt-2 text-align-center">Submit</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-right col-lg-6 d-flex flex-row align-items-center justify-content-evenly p-0">
+                        <div class="main-card mb-6">
+                            <div class="p-2 position-relative">
+                                <p
+                                    class="label-info p-1 font-white font-2 poppins-medium-custom position-absolute top-0 start-50 translate-middle">
+                                    Cont & Loc Info.
+                                </p>
+                                <ul class="poppins font-1 m-1 mt-4 list-unstyled text-center">
+                                    <li class="poppins-medium-custom font-2">09063671429</li>
+                                    <li>Phoenix Gas Station, Governor Alvarez ST., Zamboanga City, Zamboanga Del Sur
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="main-card right-card mt-6">
+                            <div class="p-2 position-relative">
+                                <p
+                                    class="label-info p-1 font-white font-2 poppins-medium-custom position-absolute top-0 start-50 translate-middle">
+                                    Business Hours
+                                </p>
+                                <div class="poppins font-3 mt-4">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div>Monday - <br> Saturday</div>
+                                        <div>8am - 7pm</div>
+                                    </div>
+                                    <div class="d-flex justify-content-between mt-2">
+                                        <div>Sunday</div>
+                                        <div>8am - 2pm</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </dic>
+    </div>
+    <div class="footer-1">
+        <div class="d-flex flex-wrap align-items-center justify-content-center pt-2 pb-2">
+            <div class="col-md-6">
+                <div class="d-flex flex-row align-items-center justify-content-center">
+                    <p class="CuadritoBakeshop-logo-footer bayon m-0">CUADRITO BAKESHOP</p>
+                    <a class="text-decoration-none font-brown poppins-medium font-1 footer-link ms-1 ps-1 pe-1"
+                        href="./about-us.html">About Us</a>
+                    <p
+                        class="text-decoration-none font-brown poppins-medium font-1 footer-link ps-1 pe-1 d-flex align-items-center">
+                        Follow Us on
+                        <a href="https://web.facebook.com/cuadritobakeshop" class="d-flex ms-1"><ion-icon
+                                class="font-2 text-align-center" name="logo-facebook"></ion-icon></a>
+                        <a href="https://www.instagram.com/cuadritobakeshop/" class="d-flex ms-1"><ion-icon
+                                class="font-2 text-align-center" name="logo-instagram"></ion-icon></a>
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="d-flex align-items-center flex-row justify-content-center bayon font-3 p-0 ms-3 me-3">
+                    <div class="me-3">
+                        <a class="text-decoration-none font-brown" href="#">Home</a>
+                    </div>
+                    <div class="ms-3">
+                        <a class="text-decoration-none font-brown" href="#">Notifications</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="w-100 d-flex justify-content-center">
+            <div class="footer-logo w-90"></div>
+        </div>
+        <div class="d-flex align-items-center flex-wrap justify-content-center container-fluid row m-0 p-0 mt-0 pb-2">
+            <div class="col-md-6 d-flex justify-content-center pt-2 pb-1">
+                <p class=" quote-logo poppins-medium d-flex justify-content-center">Your trust, our Commitment
+                    Ensuring Quality Every
+                    time
+                </p>
+            </div>
+            <div class="col-md-6 pt-2">
+                <p class="bayon font-3 d-flex justify-content-center">© 2024 Cuadrito Bakeshop. All rights
+                    reserved</p>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        const searchInputs = document.getElementById('searchInput');
+
+        function searchItems() {
+            const query = searchInputs.value.toLowerCase().trim();
+
+            // If the search input is empty, reset all items and return
+            if (query === "") {
+                resetItems();
+                return;
+            }
+
+            const items = document.querySelectorAll('.searchable-item');
+
+            items.forEach(item => {
+                if (item.textContent.toLowerCase().includes(query)) {
+                    item.style.backgroundColor = '#ffb13b'; // Highlight matched item
+                    item.style.color = '#333'; // Change text color for contrast
+                    item.scrollIntoView({ behavior: 'smooth', block: 'center' }); // Scroll to the item
+                } else {
+                    item.style.backgroundColor = ''; // Reset background if item doesn't match
+                    item.style.color = ''; // Reset text color
+                }
+            });
+        }
+
+        // Helper function to reset all items' styles
+        function resetItems() {
+            const items = document.querySelectorAll('.searchable-item');
+            items.forEach(item => {
+                item.style.backgroundColor = ''; // Reset background color
+                item.style.color = ''; // Reset text color
+            });
+        }
+
+        // Add Enter key functionality
+        searchInputs.addEventListener('keydown', (event) => {
+            if (event.key === 'Enter') {
+                searchItems();
+            }
+        });
+
+    </script>
+    <script>
+        const carousel = document.getElementById('carouselExampleCustom');
+        const items = carousel.querySelectorAll('.carousel-item');
+
+        // Add animation classes on slide transition
+        carousel.addEventListener('slide.bs.carousel', function (event) {
+            items.forEach((item) => item.classList.remove('intro', 'outro')); // Reset classes
+
+            // Add outro to current and intro to next item
+            const current = event.from;
+            const next = event.to;
+
+            items[current].classList.add('outro');
+            items[next].classList.add('intro');
+        });
+
+    </script>
+    <script>
+        function storeAction(action) {
+            localStorage.setItem('action', action); // Store the action ('login' or 'signup')
+        }
+
+
+        const searchInput = document.getElementById('searchInput');
+        const clearButton = document.getElementById('clear-button');
+
+        function clearSearch() {
+            searchInput.value = ''; // Clear the input value
+            clearButton.style.display = 'none'; // Hide the clear button
+            searchInput.focus(); // Refocus the input field
+        }
+
+        // Show the clear button only when there is input
+        searchInput.addEventListener('input', () => {
+            if (searchInput.value) {
+                clearButton.style.display = 'flex';
+            } else {
+                clearButton.style.display = 'none';
+            }
+        });
+
+    </script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="../admin/vendor/bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

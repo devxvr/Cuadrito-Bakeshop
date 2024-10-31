@@ -1,0 +1,1011 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    color: #473C38;
+}
+
+.top-68 {
+    bottom: 23%;
+}
+
+.top-1 {
+    top: 5%;
+}
+
+.top-2 {
+    top: 7%;
+}
+
+.end-1 {
+    right: 7%;
+}
+
+.start-1 {
+    left: 25%;
+}
+
+.start-2 {
+    left: 7%;
+}
+
+.w-80 {
+    width: 90%;
+}
+
+.card {
+    border: #f2f2f2 1px solid !important;
+}
+
+.rounded-6 {
+    border-radius: 30px !important;
+}
+
+.top-border {
+    border-top: #f2f2f2 3px solid !important;
+}
+
+.cuadrito-color {
+    background-color: #FECB79;
+    border-radius: 10px !important;
+}
+
+.cuadrito-color:hover {
+    background-color: #FECB79 !important;
+}
+
+.cuadrito-color-brown {
+    color: #fff !important;
+    font-weight: normal !important;
+    background-color: #473C38 !important;
+}
+
+.cuadrito-color-brown:hover {
+    color: #fff !important;
+    font-weight: normal !important;
+    background-color: #362e2b !important;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.font-1 {
+    font-size: .6rem;
+    margin: 0%;
+}
+
+.font-2 {
+    font-size: 1rem;
+    margin: 0%;
+}
+
+.label {
+    font-size: .5rem;
+    font-weight: bold;
+    height: 26px;
+    display: flex;
+    align-items: center;
+}
+
+.label-1 {
+    font-size: .1rem;
+    font-weight: bold;
+}
+
+.gray-bg {
+    background-color: #fff !important;
+}
+
+.shadow-card {
+    box-shadow: 0 0.5rem 0.5rem #473c388c !important;
+    border: none;
+}
+
+/*grid*/
+.wrapper {
+    display: grid !important;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+}
+
+.box {
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/*Login Section*/
+.w-90 {
+    width: 90%;
+}
+
+.h-custom {
+    height: 1000px !important;
+}
+
+.h-custom-1 {
+    height: 500px !important;
+}
+
+.font-3 {
+    font-size: .8rem;
+    margin: 0%;
+}
+
+.login-body {
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+}
+
+.cuadrito-logo {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+
+p.CuadritoBakeshop {
+    letter-spacing: 3px;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.container {
+    background-color: #FEE0AF;
+    height: 95vh;
+    width: 98vw !important;
+}
+
+.text {
+    width: 235px;
+    text-align: center;
+    border-bottom: 3px solid #473C38;
+    height: 35px;
+}
+
+.quote {
+    margin-top: 30px;
+    font-size: 18px;
+    width: 320px;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.login-container {
+    background-color: #473C38;
+    width: 60%;
+    height: 425px;
+}
+
+h2.heading {
+    color: #ffff;
+    font-family: poppins-bold;
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 10px 0px 10px 0px;
+    letter-spacing: 1px;
+}
+
+input.input::placeholder {
+    color: #8c8c8c !important;
+}
+
+input.input {
+    color: #473C38 !important;
+    width: 90%;
+    height: 45px;
+    background-color: #fff;
+    border: #473C38 solid 2px;
+    letter-spacing: 1px;
+    padding-left: 10px;
+    font-size: .8rem;
+    outline: none;
+}
+
+button.login-btn {
+    color: #473C38;
+    width: 50%;
+    font-family: poppins-bold;
+    height: 40px;
+    background-color: #FEE0AF;
+    border: #473C38 solid 2px;
+    letter-spacing: .1rem;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.white {
+    background-color: #ffff !important;
+}
+
+.font-white {
+    color: #ffff;
+}
+
+.brown {
+    background-color: #473C38 !important;
+}
+
+.facebook-btn,
+.google-btn {
+    color: #ffff;
+    width: 40%;
+    height: 45px;
+    font-family: poppins;
+    background-color: #473C38;
+    border: #ffff solid 2px;
+    letter-spacing: .1rem;
+    font-size: .8rem;
+    text-align: center;
+}
+
+
+
+/*responsiveness*/
+
+@media screen and (min-width: 320px) {
+    .none {
+        display: none !important;
+    }
+
+    .container {
+        display: flex !important;
+        flex-direction: column;
+        align-items: center !important;
+        justify-content: center;
+        width: 98vw !important;
+    }
+
+    .cuadrito-logo {
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+    }
+
+    .login-container {
+        background-color: #473C38;
+        width: 320px;
+        height: 425px;
+    }
+
+    .container-about-us {
+        min-height: 90vh;
+        width: 100% !important;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .none {
+        display: flex !important;
+    }
+
+    .container-about-us {
+        min-height: 90vh;
+        width: 100% !important;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .about-us-info {
+        width: 60% !important;
+    }
+}
+
+
+
+/*Animation*/
+.carousel-inner {
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel-item {
+    position: relative;
+    width: 100%;
+    top: 0;
+    left: 0;
+    transition: transform 0.6s ease-in-out, opacity 0.6s ease-in-out;
+    opacity: 0;
+    visibility: visible;
+}
+
+/* Active item - the visible slide */
+.carousel-item.active {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
+}
+
+/* Animation classes */
+/* Initial exit animation for outgoing slide */
+.carousel-item.outro {
+    opacity: 0;
+    visibility: hidden;
+    transition: transform 0.8s ease, opacity 0.8s ease;
+}
+
+/* Entry animation for incoming slide */
+.carousel-item.intro {
+    animation: pop 0.8s ease-in-out forwards;
+}
+
+@keyframes pop {
+    0% {
+        transform: scale(0.8);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+
+.login-signup-container {
+    perspective: 1000px;
+    width: 100%;
+    position: relative;
+}
+
+.flip-card {
+    width: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.5s ease-in-out;
+    position: relative;
+}
+
+.login-section,
+.signup-section {
+    backface-visibility: hidden;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.show-signup .flip-card {
+    transform: rotateY(180deg);
+}
+
+.show-login .flip-card {
+    transform: rotateY(0deg);
+}
+
+.signup-section {
+    transform: rotateY(180deg);
+}
+
+.no-transition {
+    transition: none !important;
+}
+
+.button,
+.button,
+.login-btn,
+.signup-btn {
+    cursor: pointer;
+    /* Changes the cursor to a pointer on hover */
+}
+
+.button:hover,
+.button:hover,
+.login-btn:hover,
+.signup-btn:hover {
+    cursor: pointer;
+    /* Changes cursor to pointer on hover */
+}
+
+
+
+/*landing Page*/
+.header {
+    min-height: 18vh;
+    background: linear-gradient(to bottom, #FECB79, #FEE0AF);
+    box-shadow: 0px 3px 10px #33333373;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100%;
+
+}
+
+.text-logo {
+    width: 150px;
+    text-align: center;
+    border-bottom: 3px solid #473C38;
+    height: 27px;
+    margin-left: 10px;
+}
+
+p.CuadritoBakeshop-logo {
+    letter-spacing: 1px;
+    font-weight: 500;
+    height: 27px;
+    width: 150px;
+    margin: 0%;
+}
+
+.quote-logo {
+    font-size: .8rem;
+    max-width: 300px;
+    letter-spacing: 2px;
+    text-align: center;
+    margin-bottom: 0%;
+}
+
+.font-brown {
+    color: #473C38;
+}
+
+.head-link {
+    padding-left: 10px;
+    margin-right: 10px;
+    border-left: #473C38 2px solid;
+}
+
+.search-bar {
+    height: 40px;
+    width: 30vw;
+    padding: 10px 1px 10px 10px;
+    border: #fff 2px solid;
+    border-radius: 7px 0px 0px 7px;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.search-button {
+    height: 40px;
+    width: 40px;
+    background-color: #FEE0AF;
+    border: #fff 3px solid;
+    border-radius: 0px 7px 7px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-magnifying {
+    height: 1.2rem;
+    width: 1.2rem;
+}
+
+.font-4 {
+    font-size: 1.5rem;
+}
+
+.bb-1 {
+    border-bottom: 2px solid #473C38;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.w-96vw {
+    width: 96vw;
+}
+
+.margin-4 {
+    margin-left: 2vw;
+    margin-right: 2vw;
+}
+
+input[type="search"]::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.search-container {
+    position: relative;
+    display: inline-block;
+}
+
+.clear-button {
+    z-index: 1;
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    display: none;
+}
+
+.landing-section {
+    height: 80vh;
+    /* Make sure the body and html cover the viewport */
+    padding: 2% 3.5% 4% 4%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+/*
+.landing-background
+{
+    margin: 20vh 0% 0% 0%;
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 90%; 
+    height: 100vh; 
+    object-fit: cover;
+    z-index: -1; 
+}*/
+
+.full-screen-image {
+    margin: 19vh 0% 0% 0%;
+    width: 100%;
+    height: 80vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.font-xl {
+    font-size: 7rem;
+}
+
+.cuadrito-brand {
+    letter-spacing: 1px;
+    height: 100px;
+    margin: 0%;
+    padding-left: 4px;
+}
+
+.cuadrito-brand-p {
+    letter-spacing: 1px;
+    height: 65px;
+    margin: 0%;
+    padding-left: 4px;
+}
+
+button.buy-now-btn {
+    color: #fff;
+    width: 175px;
+    height: 45px;
+    background-color: #FECB79;
+    border: #ffff solid 2px;
+    letter-spacing: .1rem;
+    font-size: 1.2rem;
+    text-align: center;
+    margin: 0%;
+}
+
+button.login-now-btn {
+    color: #fff;
+    width: 175px;
+    height: 45px;
+    background-color: #473C38;
+    border: #ffff solid 2px;
+    letter-spacing: .1rem;
+    font-size: 1.2rem;
+    text-align: center;
+    margin: 0%;
+}
+
+.right-landing {
+    width: 35%;
+    align-content: center;
+    margin-right: 7%;
+}
+
+
+
+
+
+
+
+
+
+
+
+.product-banner {
+    text-align: center;
+    align-content: center;
+    height: 75px;
+    background-color: #FEE0AF;
+    position: sticky;
+    top: 18vh;
+    /* Sticks the banner to the top when scrolling */
+    width: 100%;
+    /* Ensures the banner spans the full width of the container */
+    z-index: 100;
+    /* Keeps the banner on top of other content */
+    display: flex;
+    /* Centers the content vertically and horizontally */
+    align-items: center;
+    /* Center content vertically */
+    justify-content: center;
+    /* Center content horizontally */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*About Us*/
+.h-100 {
+    min-height: 50px !important;
+}
+
+.font-5rem {
+    font-size: 5rem;
+}
+
+.about-us {
+    position: relative;
+    height: 100%;
+}
+
+.about-us-p {
+    position: absolute;
+    z-index: 1;
+    top: 2vh;
+    left: 1%;
+    right: 0;
+}
+
+.about-us-p-2 {
+    position: absolute;
+    z-index: 1;
+    top: 11vh;
+    left: 1%;
+    right: 0;
+}
+
+.about-us-p-3 {
+    position: absolute;
+    z-index: 10;
+    right: 1%;
+    height: 50px;
+    align-content: center;
+    margin: 0%;
+    padding: 0%;
+}
+
+.about-us-p-3-left {
+    position: absolute;
+    z-index: 10;
+    right: 1%;
+    height: 50px;
+    align-content: center;
+    margin: 0%;
+    padding: 0%;
+}
+
+.about-us-p-4 {
+    position: absolute;
+    z-index: 1;
+    top: 75px;
+    left: 1%;
+    right: 0;
+}
+
+.full-screen-image-2 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+/*
+.container-about-us {
+    height: 100% !important;
+    width: 100% !important;
+}*/
+.about-us-banner {
+    height: 50px;
+    background-color: #473C38;
+    width: 100%;
+}
+
+button.learn-more-btn {
+    color: #fff;
+    width: 250px;
+    height: 45px;
+    background-color: #E6BC5D;
+    border: #473C38 solid 2px;
+    letter-spacing: .1rem;
+    font-size: 1.2rem;
+    text-align: center;
+    margin: 0%;
+}
+
+button.customize-order-btn {
+    /*color: #fff;
+    width: 250px;
+    height: 45px;
+    background-color: #473C38;
+    border: #473C38 solid 2px;
+    letter-spacing: .1rem;
+    font-size: 1.2rem;
+    text-align: center;
+    margin: 0%;*/
+    color: #fff;
+    width: 250px;
+    height: 45px;
+    background-color: #E6BC5D;
+    border: #473C38 solid 2px;
+    letter-spacing: .1rem;
+    font-size: 1.2rem;
+    text-align: center;
+    margin: 0%;
+}
+
+.w-30 {
+    width: 30%;
+}
+
+.w-40 {
+    width: 40%;
+}
+
+.w-60 {
+    width: 60%;
+}
+
+.w-70 {
+    width: 70%;
+}
+
+.a-u-info {
+    text-align: center;
+    width: 80%;
+}
+
+.faqs-banner {
+    height: 50px;
+    background-color: #473C38;
+    width: 100%;
+}
+
+.faqs-p {
+    position: absolute;
+    z-index: 1;
+    top: 2vh;
+    right: 1%;
+}
+
+.about-us-faqs {
+    position: relative;
+    height: 80vh !important;
+}
+
+.faqs {
+    background-color: #FEE0Af;
+    height: 130px;
+}
+
+.location-map {
+    width: 350px;
+    height: 350px;
+    border: #473C38 5px solid;
+    border-radius: 5px;
+    position: relative;
+    top: 0%;
+    left: 0%;
+    z-index: 1;
+}
+
+.about-us-location {
+    position: relative;
+    min-height: 70vh !important;
+}
+
+
+/*contact-us*/
+
+button.submit-btn {
+    color: #fff;
+    width: 40%;
+    font-family: poppins-bold;
+    height: 45px;
+    background-color: #473C38;
+    border: 2px solid #fff;
+    font-size: 1.1rem;
+}
+
+textarea.input-message {
+    color: #473C38;
+    width: 90%;
+    background-color: #fff;
+    border: 2px solid #473C38;
+    box-sizing: border-box;
+    font-size: .8rem;
+}
+
+input.input-message::placeholder {
+    color: #8c8c8c !important;
+}
+
+.about-contact-us {
+    min-height: 100px;
+    background: linear-gradient(to bottom, #fff 50%, #FECB79 50%);
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+}
+
+.contact-us-left {
+    background-color: #fff;
+    border-bottom-right-radius: 7vw;
+    height: 100%;
+}
+
+.contact-us-right {
+    background: linear-gradient(to bottom, #FEE0AF, #FECB79, #FECB79);
+    border-top-left-radius: 7vw;
+}
+
+.br-brown {
+    border-right: 3px solid #473C38;
+}
+
+.contact-detail {
+    display: flex;
+    flex-direction: row;
+}
+
+.contact-right {}
+
+.main-card {
+    background-color: #fff;
+    width: 45%;
+    border: #473C38 3px solid;
+    border-radius: 5px;
+}
+
+.label-info {
+    background-color: #473C38;
+    width: 90%;
+    text-align: center;
+}
+
+.right-card {
+    min-height: 165px;
+}
+
+.mt-6 {
+    margin-top: 6rem;
+}
+
+.mb-6 {
+    margin-bottom: 6rem;
+}
+
+.w-40 {
+    width: 40%;
+}
+
+.w-60 {
+    width: 60%;
+}
+
+@media (max-width: 768px) {
+    .br-brown {
+        border-right: none;
+    }
+
+    .contact-left,
+    .contact-right {
+        padding: 0;
+    }
+
+    .contact-us-left-container {
+        display: none !important;
+    }
+
+    .contact-us-right-container {
+        width: 100%;
+    }
+
+    .header {
+        min-height: 20vh !important;
+    }
+
+    .search-bar {
+        width: 50vw !important;
+    }
+
+    .header-search {
+        display: flex;
+        justify-content: center;
+
+    }
+}
+
+.footer-logo {
+    border-bottom: 3px solid #473C38;
+}
+
+.w-50 {
+    width: 50vw;
+}
+
+
+.footer-1 {
+    background-color: #FEE0AF;
+    min-height: 50px;
+}
+
+.CuadritoBakeshop-logo-footer {
+    letter-spacing: 1px;
+    font-weight: 500;
+    height: 27px;
+    width: 150px;
+    text-align: center;
+}
+
+.footer-link {
+    border-left: #473C38 2px solid;
+}
+
+
+
+
+
+
+
+/*list*/
+/* Default background color for dropdown items */
+.dropdown-item {
+    background-color: #fff;
+    /* Custom background color */
+    color: #333;
+    /* Text color */
+}
+
+/* Background color on hover */
+.dropdown-item:hover {
+    background-color: #FEE0Af;
+    /* Hover color */
+    color: #473C38;
+    /* Hover text color */
+}
+
+/* Background color when clicked (active state) */
+.dropdown-item:active {
+    background-color: #FECB79;
+    /* Active color */
+    color: #473C38;
+    /* Active text color */
+}
+
+/* Optionally remove Bootstrap's default active blue highlight */
+.dropdown-item.active {
+    background-color: #d4a879 !important;
+    /* Force custom active background */
+    color: #fff !important;
+    /* Force custom active text color */
+}

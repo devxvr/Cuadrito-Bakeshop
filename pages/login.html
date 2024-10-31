@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../admin/vendor/bootstrap-5.3.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css-files/mainCuadrito.css">
+    <link rel="stylesheet" href="./css-files/font.css">
+    <title>Login</title>
+</head>
+
+<body class="login-body d-flex align-items-center" style="background-color: #fff; height: 100vh;">
+    <div class="container d-flex flex-row m-0 p-0">
+        <div class="cuadrito-logo none">
+            <img src="../Cuadrito Images/logo.png" alt="logo" style="width: 200px;">
+            <div class="text">
+                <p class="CuadritoBakeshop bayon">CUADRITO BAKESHOP</p>
+            </div>
+            <p class="quote poppins-medium">Your trust, our Commitment Ensuring Quality Every time</p>
+        </div>
+        <div class="container d-flex flex-row login-signup-container">
+            <div class="flip-card">
+                <div class="cuadrito-logo login-section">
+                    <div
+                        class="login-container position-relative rounded-4 d-flex flex-column align-items-center justify-content-between">
+                        <div class="z-1 position-absolute top-2 start-2">
+                            <a href="#" onclick="goBack()">
+                                <ion-icon class="font-white" style="width: 1.5rem; height: 1.5rem;"
+                                    name="arrow-back-outline"></ion-icon>
+                            </a>
+                        </div>
+                        <h2 class="heading mt-4">Login</h2>
+                        <div class="h-custom d-flex justify-content-evenly align-items-center flex-column w-100">
+                            <input class="input rounded-2 poppins-medium-custom" type="text" placeholder="Email">
+                            <input class="input rounded-2 poppins-medium-custom" type="password" placeholder="Password">
+                            <button class="login-btn rounded-5 mt-3 ">Login</button>
+                        </div>
+                        <div class="d-flex flex-column w-100 align-items-center">
+                            <div class="position-relative m-4 w-90">
+                                <div class="progress" role="progressbar" aria-label="Progress" aria-valuenow="50"
+                                    aria-valuemin="0" aria-valuemax="100" style="height: 1px;">
+                                    <div class="progress-bar white" style="width: 100%"></div>
+                                </div>
+                                <p class="position-absolute top-0 translate-middle btn btn-sm brown font-white rounded-pill"
+                                    style="left: 50%; width: 2rem; height:2rem;">or</p>
+                            </div>
+                            <div class="d-flex justify-content-evenly w-100">
+                                <button class="facebook-btn rounded-5">facebook</button>
+                                <button class="google-btn rounded-5">Google</button>
+                            </div>
+                        </div>
+                        <div class="position-relative m-4 w-90">
+                            <div class="progress" role="progressbar" aria-label="Progress" aria-valuenow="50"
+                                aria-valuemin="0" aria-valuemax="100" style="height: 1px;">
+                                <div class="progress-bar white" style="width: 100%"></div>
+                            </div>
+                            <div class="d-flex flex-row justify-content-center align-items-center mt-2">
+                                <p class="create-acc font-white font-1 poppins">Create New Account?</p>
+                                <a class="poppins-bold ms-1 text-decoration-none font-white font-1 signup-link button">Sign
+                                    Up</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cuadrito-logo signup-section">
+                    <div
+                        class="login-container position-relative rounded-4 d-flex flex-column align-items-center justify-content-between">
+                        <div class="z-1 position-absolute top-2 start-2">
+                            <a href="#" onclick="goBack()">
+                                <ion-icon class="font-white" style="width: 1.5rem; height: 1.5rem;"
+                                    name="arrow-back-outline"></ion-icon>
+                            </a>
+                        </div>
+                        <h2 class="heading mt-4">Sign Up</h2>
+                        <div class="h-custom-1 d-flex justify-content-evenly align-items-center flex-column w-100">
+                            <input class="input rounded-2 poppins-bold" type="text" placeholder="Email">
+                            <button class="login-btn rounded-5 mt-3">Sign Up</button>
+                        </div>
+                        <div class="d-flex flex-column w-100 align-items-center">
+                            <div class="position-relative m-4 w-90">
+                                <div class="progress" role="progressbar" aria-label="Progress" aria-valuenow="50"
+                                    aria-valuemin="0" aria-valuemax="100" style="height: 1px;">
+                                    <div class="progress-bar white" style="width: 100%"></div>
+                                </div>
+                                <p class="position-absolute top-0 start-33 translate-middle btn btn-sm brown font-white rounded-pill"
+                                    style="left: 50%; width: 2rem; height:2rem;">or</p>
+                            </div>
+                            <div class="d-flex justify-content-evenly w-100">
+                                <button class="facebook-btn rounded-5">facebook</button>
+                                <button class="google-btn rounded-5">Google</button>
+                            </div>
+                        </div>
+                        <div class="position-relative m-4 w-90">
+                            <div class="d-flex flex-row justify-content-center align-items-center mt-2 mb-3">
+                                <p class="create-acc font-white font-1 poppins text-center">By signing up, you agreeto
+                                    Cuadrito's
+                                    <span class="create-acc font-white font-1 poppins-bold">Terms of Service & Privary
+                                        policy</span>
+                                </p>
+                            </div>
+                            <div class="progress" role="progressbar" aria-label="Progress" aria-valuenow="50"
+                                aria-valuemin="0" aria-valuemax="100" style="height: 1px;">
+                                <div class="progress-bar white" style="width: 100%"></div>
+                            </div>
+                            <div class="d-flex flex-row justify-content-center align-items-center mt-2">
+                                <p class="create-acc font-white font-1 poppins">Already have an Account?</p>
+                                <a class="poppins-bold ms-1 text-decoration-none font-white font-1 login-link button">Log
+                                    In</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function goBack() {
+            window.history.back(); // Goes back to the previous page
+        }
+    </script>
+    <script src="/js-animation/animation.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

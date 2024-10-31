@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../admin/vendor/bootstrap-5.3.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css-files/mainCuadrito.css">
+    <link rel="stylesheet" href="./css-files/font.css">
+    <title>About Us</title>
+</head>
+
+<body>
+    <nav class="navbar header navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <div class="header-logo d-flex align-items-center">
+                <img src="./Cuadrito Images/logo.png" alt="logo" style="width: 50px;">
+                <div class="text-logo">
+                    <p class="CuadritoBakeshop-logo bayon ml-2">CUADRITO BAKESHOP</p>
+                </div>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+                aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                </ul>
+                <ul class="navbar-nav d-flex flex-row align-items-center justify-content-center bayon font-2">
+                    <li class="nav-item me-3">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item ms-3 me-3 dropdown-center">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Pastry
+                        </a>
+                        <ul class="dropdown-menu font-brown position-absolute start-0 top-100 z-1">
+                            <li><a class="dropdown-item font-brown" href="#product-banner-all">Cakes</a></li>
+                            <li><a class="dropdown-item font-brown" href="#product-banner-Special">Specials</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item font-brown" href="#">Customize Your Own Cake!</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item ms-3 me-3 d-flex flex-row align-items-center">
+                        <ion-icon class=" font-brown font-2" name="notifications-outline"></ion-icon>
+                        <a class="nav-link" href="#">Notifications</a>
+                    </li>
+                    <li class="nav-item font-4 d-flex align-items-center font-brown">
+                        <a class="d-flex align-items-center" href="#"><ion-icon name="cart-outline"></ion-icon></a>
+                    </li>
+                    <li class="nav-item ms-3 d-flex flex-column align-items-center">
+                        <a class="nav-link font-brown p-0 bb-1" aria-current="page" href="./login.html"
+                            onclick="storeAction('login')">Login</a>
+                        <a class="nav-link font-brown p-0" aria-current="page" href="./login.html"
+                            onclick="storeAction('signup')">SignUp</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="about-us" id="about-us">
+        <div class="about-us-banner product-banner">
+            <h1 class="font-white poppins font-2 about-us-p-3">About us</h1>
+        </div>
+        <img src="./Cuadrito Images/background-Image.png" class="full-screen-image-2" alt="Background Image">
+        <h1 class="font-brown anton font-5rem about-us-p">About</h1>
+        <h1 class="font-brown anton font-5rem about-us-p-2">us</h1>
+        <div class="container-about-us d-flex align-items-center m-0 p-0">
+            <div class="cuadrito-logo w-40 mt-5 mb-5">
+                <img src="./Cuadrito Images/logo.png" alt="logo" style="width: 200px;">
+                <div class="text">
+                    <p class="CuadritoBakeshop bayon">CUADRITO BAKESHOP</p>
+                </div>
+            </div>
+            <div class="about-us-info d-flex align-items-center justify-content-center flex-column w-80 mt-5 mb-5">
+                <p class="a-u-info poppins font-3 mb-3">
+                    Cuadrito Bakeshop has been a beloved fixture in Zamboanga City for the past 25 years. Originally
+                    founded by a passionate baker, the shop has grown from its humble beginnings on Gov. Alvarez St.
+                    into a trusted name in the community, known for its fresh and delicious cakes and pastries. The
+                    business has been passed down through the family, with the next generation now continuing the
+                    tradition of baking with love and care.
+                    <br><br>
+                    While the shop thrived on word-of-mouth for many years, Cuadrito Bakeshop is now stepping into the
+                    digital world. With the launch of its online ordering system, customers can easily order their
+                    favorite treats for any occasion, bringing the shop’s handcrafted goodness right to their doorstep.
+                </p>
+                <div class="d-flex justify-content-center flex-wrap">
+                    <!--<button class="learn-more-btn rounded-5 poppins-bold pb-1 pt-1 m-1"><a href="#product-banner"
+                            class="text-decoration-none font-white">Learn more...</a></button>-->
+                    <button class="customize-order-btn rounded-5 poppins-bold pb-1 pt-1 m-1"><a href="./login.html"
+                            class="text-decoration-none font-white">Customize Order</a></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="about-us-faqs" id="faqs">
+        <img src="./Cuadrito Images/background-Image.png" class="full-screen-image-2" alt="Background Image">
+        <div class="faqs">
+            <h1 class="font-brown anton font-5rem faqs-p">faq's</h1>
+            <div class="faqs-banner product-banner">
+                <h1 class="font-white poppins font-2 about-us-p-3-left">FAQs</h1>
+            </div>
+        </div>
+    </div>
+    <div class="about-us-location" id="location">
+        <h1 class="font-brown anton font-5rem about-us-p">Loca</h1>
+        <h1 class="font-brown anton font-5rem about-us-p-4">tion</h1>
+        <div class="about-us-banner product-banner">
+            <h1 class="font-white poppins font-2 about-us-p-3">Location</h1>
+        </div>
+        <div class="container-about-us d-flex align-items-center m-0 p-0 row">
+            <div class="d-flex justify-content-center align-content-center col-sm-6 mt-5 mb-5">
+                <iframe class="location-map"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d990.213883749274!2d122.07388894408786!3d6.907872315939888!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x325041fce97fb3ab%3A0xfb452d2e1adf3089!2s55%20Mayor%20Climaco%20Ave%2C%20Zamboanga%2C%20Zamboanga%20del%20Sur!5e0!3m2!1sen!2sph!4v1730100054818!5m2!1sen!2sph"
+                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="d-flex justify-content-center align-items-center flex-column col-sm-6">
+                <div class="m-3">
+                    <h1 class="font-brown poppins-bold font-4 d-flex align-items-center"><ion-icon class="me-2"
+                            name="phone-portrait-outline"></ion-icon>Pick Up or Delivery</h1>
+                    <ul class="poppins font-3 mb-3 ms-3">
+                        <li>Delivery at Buyer’s Expense</li>
+                        <li>Buyer to Book Delivery</li>
+                        <li>Inform Rider the Name in the Order form during Pick Up</li>
+                    </ul>
+                    </p>
+                    <h1 class="font-brown poppins-bold font-4 d-flex align-items-center"><ion-icon class="me-2"
+                            name="location"></ion-icon>Cuadrito Bakeshop</h1>
+                    <ul class="poppins font-3 mb-3 ms-5 list-unstyled">
+                        <li>09063671429</li>
+                        <li>Phoenix Gas Station, Governor Alvarez ST., Zamboanga City,
+                            Zamboanga Del Sur (Entrance to Grand Astoria Parking)</li>
+                    </ul>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="about-contact-us" id="contact-us">
+        <div class="w-30 p-0 contact-us-left-container">
+            <div class="contact-us-left d-flex justify-content-center align-items-center">
+                <img src="./Cuadrito Images/logo.png" alt="logo" style="width: 18vw;">
+            </div>
+        </div>
+        <div class="w-70 contact-us-right-container p-0 pb-5">
+            <div class="contact-us-right d-flex justify-content-center align-items-center flex-column p-0">
+                <div class="d-flex justify-content-center">
+                    <h2 class="font-brown anton mt-4">Contact Us</h2>
+                </div>
+                <div class="contact-detail d-flex justify-content-center row">
+                    <div class="contact-left  col-lg-5 p-0">
+                        <div class="d-flex flex-column align-items-center pe-1 pe-2-custom br-brown">
+                            <input class="input rounded-2 poppins-medium mb-2" type="text" placeholder="Email">
+                            <input class="input rounded-2 poppins-medium mb-2" type="text" placeholder="Full Name">
+                            <input class="input rounded-2 poppins-medium mb-2" type="text" placeholder="Contact Number">
+                            <textarea class="input-message rounded-2 poppins-medium mb-2 p-2" id="message"
+                                autocomplete="off" placeholder="Message" maxlength="1000" oninput="updateCounter()"
+                                rows="4"></textarea>
+                            <div class="w-90 d-flex justify-content-between">
+                                <small id="charCount" class="form-text text-muted">1000</small>
+                                <button class="submit-btn rounded-5 mt-2 text-align-center">Submit</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-right col-lg-6 d-flex flex-row align-items-center justify-content-evenly p-0">
+                        <div class="main-card mb-6">
+                            <div class="p-2 position-relative">
+                                <p
+                                    class="label-info p-1 font-white font-2 poppins-medium-custom position-absolute top-0 start-50 translate-middle">
+                                    Cont & Loc Info.
+                                </p>
+                                <ul class="poppins font-1 m-1 mt-4 list-unstyled text-center">
+                                    <li class="poppins-medium-custom font-2">09063671429</li>
+                                    <li>Phoenix Gas Station, Governor Alvarez ST., Zamboanga City, Zamboanga Del Sur
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="main-card right-card mt-6">
+                            <div class="p-2 position-relative">
+                                <p
+                                    class="label-info p-1 font-white font-2 poppins-medium-custom position-absolute top-0 start-50 translate-middle">
+                                    Business Hours
+                                </p>
+                                <div class="poppins font-3 mt-4">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div>Monday - <br> Saturday</div>
+                                        <div>8am - 7pm</div>
+                                    </div>
+                                    <div class="d-flex justify-content-between mt-2">
+                                        <div>Sunday</div>
+                                        <div>8am - 2pm</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </dic>
+    </div>
+    <div class="footer-1">
+        <div class="d-flex flex-wrap align-items-center justify-content-center pt-2 pb-2">
+            <div class="col-md-6">
+                <div class="d-flex flex-row align-items-center justify-content-center">
+                    <p class="CuadritoBakeshop-logo-footer bayon m-0">CUADRITO BAKESHOP</p>
+                    <a class="text-decoration-none font-brown poppins-medium font-1 footer-link ms-1 ps-1 pe-1"
+                        href="./about-us.html">About Us</a>
+                    <p
+                        class="text-decoration-none font-brown poppins-medium font-1 footer-link ps-1 pe-1 d-flex align-items-center">
+                        Follow Us on
+                        <a href="https://web.facebook.com/cuadritobakeshop" class="d-flex ms-1"><ion-icon
+                                class="font-2 text-align-center" name="logo-facebook"></ion-icon></a>
+                        <a href="https://www.instagram.com/cuadritobakeshop/" class="d-flex ms-1"><ion-icon
+                                class="font-2 text-align-center" name="logo-instagram"></ion-icon></a>
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="d-flex align-items-center flex-row justify-content-center bayon font-3 p-0 ms-3 me-3">
+                    <div class="me-3">
+                        <a class="text-decoration-none font-brown" href="#">Home</a>
+                    </div>
+                    <div class="ms-3">
+                        <a class="text-decoration-none font-brown" href="#">Notifications</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="w-100 d-flex justify-content-center">
+            <div class="footer-logo w-90"></div>
+        </div>
+        <div class="d-flex align-items-center flex-wrap justify-content-center container-fluid row m-0 p-0 mt-0 pb-2">
+            <div class="col-md-6 d-flex justify-content-center pt-2 pb-1">
+                <p class=" quote-logo poppins-medium d-flex justify-content-center">Your trust, our Commitment
+                    Ensuring Quality Every
+                    time
+                </p>
+            </div>
+            <div class="col-md-6 pt-2">
+                <p class="bayon font-3 d-flex justify-content-center">© 2024 Cuadrito Bakeshop. All rights
+                    reserved</p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="./js-animation/charCounter.js">
+    </script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="../admin/vendor/bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
