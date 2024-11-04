@@ -38,19 +38,22 @@
                         </div>
                     </header>
                     <div class="container-xl px-4">
-                        <div class="card mt-n10">
-                            <div class="card">
-                                <div class="card-header border-bottom">
-                                    <ul class="nav nav-tabs card-header-tabs" id="cardTab" role="tablist">
-                                        <li class="nav-item">
-                                            <a class="nav-link active" id="product-tab" href="#product" data-bs-toggle="tab" role="tab" aria-controls="product" aria-selected="true">Products</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" id="adons-tab" href="#adons" data-bs-toggle="tab" role="tab" aria-controls="adons" aria-selected="false">Ad-Ons</a>
-                                        </li>
-                                        
-                                    </ul>
-                                </div>
+    <div class="card mt-n10">
+        <div class="card">
+            <div class="card-header border-bottom d-flex justify-content-between align-items-center">
+                <ul class="nav nav-tabs card-header-tabs" id="cardTab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="product-tab" href="#product" data-bs-toggle="tab" role="tab" aria-controls="product" aria-selected="true">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="adons-tab" href="#adons" data-bs-toggle="tab" role="tab" aria-controls="adons" aria-selected="false">Ad-Ons</a>
+                    </li>
+                </ul>
+                <!-- Add Button -->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalAdd">
+                    Add
+                </button>
+            </div>
                                 <div class="card-body">
                                     <div class="tab-content" id="cardTabContent">
                                         <!-- Product Tab -->
@@ -245,6 +248,31 @@
                                         </div>
                                     </div>
                                 </div>
+                                
+                                <!-- Add Modal -->
+                                <div class="modal fade" id="modalAdd" tabindex="-1" aria-labelledby="modalAddLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="modalAddLabel">Add New Item</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <form>
+                                                <div class="mb-3">
+                                                    <label for="itemName" class="form-label">Item Name</label>
+                                                    <input type="text" class="form-control" id="itemName" placeholder="Enter item name">
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="itemPrice" class="form-label">Price</label>
+                                                    <input type="number" class="form-control" id="itemPrice" placeholder="Enter item price">
+                                                </div>
+                                                <button type="submit" class="btn btn-primary">Add Item</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                             </div>
                             
                         </div>

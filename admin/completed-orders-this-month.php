@@ -115,7 +115,7 @@
                                                     <th>Price</th>
                                                     <th>Order Date</th>
                                                     <th>Delivery/Pickup Date</th>
-                                                    <th>Payment Status</th>
+                                                    <th>Type of Cake</th>
                                                     <th>Actions</th>
                                                 </tr>
                                             </thead>
@@ -128,7 +128,7 @@
                                                     <td>180</td>
                                                     <td>10/24/2024</td>
                                                     <td>10/27/2024</td>
-                                                    <td><div class="badge bg-primary text-white rounded-pill">Paid</div></td>
+                                                    <td>Regular</td>
                                                     <td>
                                                         <div class="d-flex align-items-center">
                                                             <button class="btn btn-datatable btn-icon btn-transparent-dark me-2" type="button" data-bs-toggle="modal" data-bs-target="#detailsModal">
