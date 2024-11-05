@@ -9,7 +9,7 @@
         <link href="css/datatables.style.css" rel="stylesheet" />
         <link href="css/litepicker.css" rel="stylesheet" />
         <link href="css/styles.css" rel="stylesheet" />
-        <link rel="icon" type="image/x-icon" href="assets/img/favicon.png" />
+     <!--   <link rel="icon" type="image/x-icon" href="assets/img/favicon.png" /> -->
         <script data-search-pseudo-elements defer src="vendor/fontawesome-free-6.5.2-web/js/all.min.js"></script>
         <script src="node_modules/feather-icons/dist/feather.min.js"></script>
     </head>
