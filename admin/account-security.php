@@ -28,13 +28,12 @@
                     </header>
                     <!-- Main page content-->
                     <div class="container-xl px-4 mt-4">
+                        
                         <!-- Account page navigation-->
-                        <nav class="nav nav-borders">
-                            <a class="nav-link ms-0" href="account-profile.html">Profile</a>
-                            <a class="nav-link" href="account-billing.html">Billing</a>
-                            <a class="nav-link active" href="account-security.html">Security</a>
-                            
-                        </nav>
+                        <?php
+                        require_once('include/account.profile.nav.php');
+                        ?>
+
                         <hr class="mt-0 mb-4" />
                         <div class="row">
                             <div class="col-lg-8">
