@@ -38,22 +38,22 @@
                         </div>
                     </header>
                     <div class="container-xl px-4">
-    <div class="card mt-n10">
-        <div class="card">
-            <div class="card-header border-bottom d-flex justify-content-between align-items-center">
-                <ul class="nav nav-tabs card-header-tabs" id="cardTab" role="tablist">
-                    <li class="nav-item">
-                        <a class="nav-link active" id="product-tab" href="#product" data-bs-toggle="tab" role="tab" aria-controls="product" aria-selected="true">Products</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="adons-tab" href="#adons" data-bs-toggle="tab" role="tab" aria-controls="adons" aria-selected="false">Ad-Ons</a>
-                    </li>
-                </ul>
-                <!-- Add Button -->
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalAdd">
-                    Add
-                </button>
-            </div>
+                        <div class="card mt-n10">
+                            <div class="card">
+                                <div class="card-header border-bottom d-flex justify-content-between align-items-center">
+                                    <ul class="nav nav-tabs card-header-tabs" id="cardTab" role="tablist" style="">
+                                        <li class="nav-item mb-n1">
+                                            <a class="nav-link active" id="product-tab" href="#product" data-bs-toggle="tab" role="tab" aria-controls="product" aria-selected="true">Products</a>
+                                        </li>
+                                        <li class="nav-item mb-n1">
+                                            <a class="nav-link" id="adons-tab" href="#adons" data-bs-toggle="tab" role="tab" aria-controls="adons" aria-selected="false">Ad-Ons</a>
+                                        </li>
+                                    </ul>
+                                    <!-- Add Button -->
+                                    <button type="button" class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#modalAdd">
+                                        Add
+                                    </button>
+                                </div>
                                 <div class="card-body">
                                     <div class="tab-content" id="cardTabContent">
                                         <!-- Product Tab -->
@@ -68,7 +68,7 @@
                                                             <th>Price</th>
                                                             <th>Date Added</th>
                                                             <th>Status</th>
-                                                            <th>Disable Cake</th>
+                                                            <th>Disable Product</th>
                                                             <th>Actions</th>
                                                         </tr>
                                                     </thead>
@@ -111,9 +111,10 @@
                                                 <table id="datatablesAdons">
                                                     <thead>
                                                         <tr>
-                                                            <th>Ad-On ID</th>
+                                                            <th>Add-On ID</th>
                                                             <th>Ad-On Name</th>
                                                             <th>Price</th>
+                                                            <th>Disable Add-Ons</th>
                                                             <th>Status</th>
                                                             <th>Actions</th>
                                                         </tr>
@@ -124,6 +125,7 @@
                                                             <td>1</td>
                                                             <td>Cup Cake</td>
                                                             <td>10</td>
+                                                            <td></td>
                                                             <td><div class="badge bg-primary text-white rounded-pill">Available</div></td>
                                                             <td>
                                                                 <div class="d-flex align-items-center">
@@ -146,6 +148,7 @@
                                                             <td>2</td>
                                                             <td>Candle</td>
                                                             <td>10</td>
+                                                            <td></td>
                                                             <td><div class="badge bg-primary text-white rounded-pill">Available</div></td>
                                                             <td>
                                                                 <div class="d-flex align-items-center">
@@ -168,6 +171,7 @@
                                                             <td>3</td>
                                                             <td>Birthday Letter</td>
                                                             <td>0</td>
+                                                            <td></td>
                                                             <td><div class="badge bg-primary text-white rounded-pill">Available</div></td>
                                                             <td>
                                                                 <div class="d-flex align-items-center">
@@ -250,7 +254,7 @@
                                 </div>
                                 
                                 <!-- Add Modal -->
-                                <div class="modal fade" id="modalAdd" tabindex="-1" aria-labelledby="modalAddLabel" aria-hidden="true">
+                            <div class="modal fade" id="modalAdd" tabindex="-1" aria-labelledby="modalAddLabel" aria-hidden="true">
                                 <div class="modal-dialog modal-dialog-centered">
                                     <div class="modal-content">
                                         <div class="modal-header">

@@ -131,8 +131,8 @@
                                     -->
                                     </a>
                                     <!-- <a class="nav-link" href="pending-custom-order.html">Pending Custom Order</a> -->
-                                    <a class="nav-link" href="all-pending-orders.php">All Pending Orders</a>
                                     <a class="nav-link" href="orders-today.php">Order Today</a>
+                                    <a class="nav-link" href="all-pending-orders.php">All Pending Orders</a>
                                     <a class="nav-link" href="completed-orders-this-month.php">Completed Orders This Month</a>
                                 </nav>
                             </div>
