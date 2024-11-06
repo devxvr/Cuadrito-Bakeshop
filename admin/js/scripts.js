@@ -51,24 +51,16 @@ window.addEventListener('DOMContentLoaded', event => {
         });
     }
 
-    // Add active state to sidebar nav links
-    let activatedPath = window.location.pathname;
-    
-    // Extract the filename with extension from the path
-    const match = activatedPath.match(/[^\/]+$/);
-    if (match) {
-        activatedPath = match[0];
+    // Add active state to sidbar nav links
+    let activatedPath = window.location.pathname.match(/([\w-]+\.html)/, '$1');
+
+    if (activatedPath) {
+        activatedPath = activatedPath[0];
     } else {
-        activatedPath = 'index.php'; // Changed default to .php
+        activatedPath = 'index.html';
     }
 
-    // Find nav links that match either .html or .php version of the file
-    const htmlVersion = activatedPath.replace('.php', '.html');
-    const phpVersion = activatedPath.replace('.html', '.php');
-    
-    const targetAnchors = document.body.querySelectorAll(
-        `[href="${activatedPath}"].nav-link, [href="${htmlVersion}"].nav-link, [href="${phpVersion}"].nav-link`
-    );
+    const targetAnchors = document.body.querySelectorAll('[href="' + activatedPath + '"].nav-link');
 
     targetAnchors.forEach(targetAnchor => {
         let parentNode = targetAnchor.parentNode;
