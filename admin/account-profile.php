@@ -92,23 +92,21 @@
                                                     <input class="form-control" id="inputLocation" type="text" placeholder="Enter your Branch location" value="" />
                                                 </div>
                                             </div>
-                                            <!-- Form Group (email address)-->
-                                            <div class="mb-3">
+                                            
+                                           
+                                            <!-- Form Row-->
+                                            <div class="row gx-3 mb-3">
+                                                <!-- Form Group (email address)-->
+                                            <div class="col-md-6">
                                                 <label class="small mb-1" for="inputEmailAddress">Email address</label>
                                                 <input class="form-control" id="inputEmailAddress" type="email" placeholder="Enter your email address" value="" />
                                             </div>
-                                            <!-- Form Row-->
-                                            <div class="row gx-3 mb-3">
                                                 <!-- Form Group (phone number)-->
                                                 <div class="col-md-6">
                                                     <label class="small mb-1" for="inputPhone">Phone number</label>
                                                     <input class="form-control" id="inputPhone" type="tel" placeholder="Enter your phone number" value="" />
                                                 </div>
-                                                <!-- Form Group (birthday)-->
-                                                <div class="col-md-6">
-                                                    <label class="small mb-1" for="inputBirthday">Birthday</label>
-                                                    <input class="form-control" id="inputBirthday" type="text" name="birthday" placeholder="Enter your birthday" value="" />
-                                                </div>
+                                                
                                             </div>
                                             <!-- Save changes button-->
                                             <button class="btn btn-primary" type="button">Save changes</button>
