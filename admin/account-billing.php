@@ -9,7 +9,9 @@
    <?php
    require_once('include/navbar.php');
    ?>
-        
+        <?php
+   require_once('include/sidebar.php');
+   ?>
             <div id="layoutSidenav_content">
                 <main>
                     <header class="page-header page-header-compact page-header-light border-bottom bg-white mb-4">

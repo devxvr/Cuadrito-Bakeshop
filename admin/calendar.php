@@ -9,7 +9,9 @@
    <?php
    require_once('include/navbar.php');
    ?>
-        
+        <?php
+   require_once('include/sidebar.php');
+   ?>
             <div id="layoutSidenav_content">
                 <main>
                     <header class="page-header page-header-dark bg-gradient-primary-to-secondary pb-10">

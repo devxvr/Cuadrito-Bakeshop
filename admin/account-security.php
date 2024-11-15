@@ -9,6 +9,10 @@
    <?php
    require_once('include/navbar.php');
    ?>
+   
+   <?php
+   require_once('include/sidebar.php');
+   ?>
         
             <div id="layoutSidenav_content">
                 <main>
