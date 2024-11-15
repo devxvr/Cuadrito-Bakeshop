@@ -11,19 +11,11 @@
                 <!-- * * Note: * * Visible only on and above the lg breakpoint-->
 
 
-                    <!-- SEARCH BAR
-                <form class="form-inline me-auto d-none d-lg-block me-3">
-                    <div class="input-group input-group-joined input-group-solid">
-                        <input class="form-control pe-0" type="search" placeholder="Search" aria-label="Search" />
-                        <div class="input-group-text"><i data-feather="search"></i></div>
-                    </div>
-                </form>
-            -->
+                   
             <!-- Navbar Items-->
             <ul class="navbar-nav align-items-center ms-auto">
                
-                <!-- Navbar Search Dropdown-->
-                <!-- * * Note: * * Visible only below the lg breakpoint-->
+                
                 
                 <!-- Alerts Dropdown-->
                 <li class="nav-item dropdown no-caret d-none d-sm-block me-3 dropdown-notifications">
@@ -90,7 +82,7 @@
                 </li>
             </ul>
         </nav>
-        <div id="layoutSidenav">
+        <di id="layoutSidenav">
             <div id="layoutSidenav_nav">
                 <nav class="sidenav shadow-right sidenav-light">
                     <div class="sidenav-menu">
@@ -167,5 +159,6 @@
                     </div>
                 </nav>
             </div>
+           
         
            

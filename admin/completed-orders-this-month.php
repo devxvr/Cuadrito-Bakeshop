@@ -30,77 +30,10 @@
                     <div class="container-xl px-4 mt-n10">
                         <div class="row">
                             <div class="row">
-                            <!--
-                                <div class="col-lg-6 col-xl-3 mb-4">
-                                    <div class="card bg-primary text-white h-100">
-                                        <div class="card-body">
-                                            <div class="d-flex justify-content-between align-items-center">
-                                                <div class="me-3">
-                                                    <div class="text-white-75 small">Pending Custom Order</div>
-                                                    <div class="text-lg fw-bold">2</div>
-                                                </div>
-                                                <i class="feather-xl text-white-50" data-feather="edit"></i>
-                                            </div>
-                                        </div>
-                                        <div class="card-footer d-flex align-items-center justify-content-between small">
-                                            <a class="text-white stretched-link" href="pending-custom-order.html ">View Report</a>
-                                            <div class="text-white"><i class="fas fa-angle-right"></i></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                -->
-                                <div class="col-lg-6 col-xl-4 mb-4">
-                            <div class="card bg-success text-white h-100">
-                                <div class="card-body">
-                                        <div class="d-flex justify-content-between align-items-center">
-                                            <div class="me-3">
-                                                <div class="text-white-75 small">Orders Today</div>
-                                                <div class="text-lg fw-bold">5</div>
-                                            </div>
-                                            <i class="feather-xl text-white-50" data-feather="clipboard"></i>
-                                        </div>
-                                    </div>
-                                    <div class="card-footer d-flex align-items-center justify-content-between small">
-                                        <a class="text-white stretched-link" href="orders-today.php">View Report</a>
-                                        <div class="text-white"><i class="fas fa-angle-right"></i></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-6 col-xl-4 mb-4">
-                                <div class="card bg-warning text-white h-100">
-                                    <div class="card-body">
-                                        <div class="d-flex justify-content-between align-items-center">
-                                            <div class="me-3">
-                                                <div class="text-white-75 small">All Pending Orders</div>
-                                                <div class="text-lg fw-bold">11</div>
-                                            </div>
-                                            <i class="feather-xl text-white-50" data-feather="book-open"></i>
-                                        </div>
-                                    </div>
-                                    <div class="card-footer d-flex align-items-center justify-content-between small">
-                                        <a class="text-white stretched-link" href="all-pending-orders.php">View Report</a>
-                                        <div class="text-white"><i class="fas fa-angle-right"></i></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-6 col-xl-4 mb-4">
-                                <div class="card bg-danger text-white h-100">
-                                    <div class="card-body">
-                                        <div class="d-flex justify-content-between align-items-center">
-                                            <div class="me-3">
-                                                <div class="text-white-75 small">Completed Orders This Month</div>
-                                                <div class="text-lg fw-bold">25</div>
-                                            </div>
-                                            <i class="feather-xl text-white-50" data-feather="check-square"></i>
-                                        </div>
-                                    </div>
-                                    <div class="card-footer d-flex align-items-center justify-content-between small">
-                                        <a class="text-white stretched-link" href="completed-orders-this-month.php">View Report</a>
-                                        <div class="text-white"><i class="fas fa-angle-right"></i></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                            
+                            <?php
+                                require_once('include/report-cards.php');
+                                ?>
                             <div class="row">
                             <div class="container-xl px-4 mt-3">
                                 <div class="card mb-4">
