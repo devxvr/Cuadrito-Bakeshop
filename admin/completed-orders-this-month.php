@@ -1,7 +1,7 @@
 <?php
 
 
-        $title = 'Products and Ad-Ons';
+        $title = 'Completed Orders This Month';
         require_once('include/head.php');
 
     ?>

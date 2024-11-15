@@ -1,7 +1,7 @@
 <?php
 
 
-        $title = 'Reports';
+        $title = 'Deals and Offer';
         require_once('include/head.php');
 
     ?>

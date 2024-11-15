@@ -1,7 +1,7 @@
 <?php
 
 
-        $title = 'Reports';
+        $title = 'All Pending Order';
         require_once('include/head.php');
 
     ?>

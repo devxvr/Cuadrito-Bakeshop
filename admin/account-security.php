@@ -1,7 +1,7 @@
 <?php
 
 
-        $title = 'Reports';
+        $title = 'Account Security';
         require_once('include/head.php');
 
     ?>
@@ -9,7 +9,7 @@
    <?php
    require_once('include/navbar.php');
    ?>
-   
+
    <?php
    require_once('include/sidebar.php');
    ?>

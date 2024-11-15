@@ -1,7 +1,7 @@
 <?php
 
 
-        $title = 'Reports';
+        $title = 'Account Billing';
         require_once('include/head.php');
 
     ?>

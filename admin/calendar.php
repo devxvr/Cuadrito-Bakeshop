@@ -1,7 +1,7 @@
 <?php
 
 
-        $title = 'Reports';
+        $title = 'Calendar';
         require_once('include/head.php');
 
     ?>
