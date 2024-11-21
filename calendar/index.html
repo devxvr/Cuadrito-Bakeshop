@@ -1,0 +1,129 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calendar</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link href="./style.css" rel="stylesheet" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="calendar disable-selection" id="calendar">
+      <div class="left-side">
+        <div class="current-day text-center">
+          <h1 class="calendar-left-side-day"></h1>
+          <div class="calendar-left-side-day-of-week"></div>
+        </div>
+        <div class="current-day-events">
+          <div>Current Events:</div>
+          <ul class="current-day-events-list"></ul>
+        </div>
+        <div class="add-event-day">
+          <input
+            type="date"
+            class="add-event-day-field"
+            placeholder="Create an Event"
+          />
+          <span
+            class="fa fa-plus-circle cursor-pointer add-event-day-field-btn"
+          ></span>
+        </div>
+      </div>
+      <div class="right-side">
+        <div class="text-right calendar-change-year">
+          <div class="calendar-change-year-slider">
+            <span
+              class="fa fa-caret-left cursor-pointer calendar-change-year-slider-prev"
+            ></span>
+            <span class="calendar-current-year"></span>
+            <span
+              class="fa fa-caret-right cursor-pointer calendar-change-year-slider-next"
+            ></span>
+          </div>
+        </div>
+        <div class="calendar-month-list">
+          <ul class="calendar-month"></ul>
+        </div>
+        <div class="calendar-week-list">
+          <ul class="calendar-week"></ul>
+        </div>
+        <div class="calendar-day-list">
+          <ul class="calendar-days"></ul>
+        </div>
+      </div>
+    </div>
+    <script async src="./script.js"></script>
+    <script>
+      // Select the necessary elements
+const addEventButton = document.querySelector(".add-event-day-field-btn");
+const addEventField = document.querySelector(".add-event-day-field");
+const currentDayEventsList = document.querySelector(".current-day-events-list");
+const calendarDays = document.querySelector(".calendar-days");
+
+// Initialize an object to store events
+const events = {};
+
+// Helper function to get the selected date
+function getSelectedDate() {
+  // Assuming you have a way to retrieve the selected date
+  // For example, it could be the current day displayed on the calendar
+  return document.querySelector(".calendar-left-side-day").innerText;
+}
+
+// Add a new event to the calendar
+function addEvent() {
+  const eventText = addEventField.value.trim();
+  const selectedDate = getSelectedDate();
+
+  if (!eventText || !selectedDate) return;
+
+  // Initialize events array for the date if not present
+  if (!events[selectedDate]) {
+    events[selectedDate] = [];
+  }
+  // Add the event to the selected date
+  events[selectedDate].push(eventText);
+
+  // Clear the input field
+  addEventField.value = "";
+
+  // Update the events list for the current day
+  displayEvents(selectedDate);
+}
+
+// Display events for a given date
+function displayEvents(date) {
+  currentDayEventsList.innerHTML = ""; // Clear current list
+
+  if (events[date]) {
+    events[date].forEach(event => {
+      const li = document.createElement("li");
+      li.textContent = event;
+      currentDayEventsList.appendChild(li);
+    });
+  }
+}
+
+// Event listener for adding events
+addEventButton.addEventListener("click", addEvent);
+
+// Example function to change the selected date
+calendarDays.addEventListener("click", (e) => {
+  if (e.target.classList.contains("calendar-day")) {
+    const day = e.target.innerText;
+    document.querySelector(".calendar-left-side-day").innerText = day;
+    
+    // Display events for the selected date
+    displayEvents(day);
+  }
+});
+
+    </script>
+  </body>
+</html>

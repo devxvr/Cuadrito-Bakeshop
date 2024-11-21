@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casual Calendar</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <div class="container">
+        <div class="calendar">
+            <button id="exit-calendar">Exit Calendar</button>
+            <div class="calendar-header">
+                <div class="month-year"></div>
+                <div class="nav-buttons">
+                    <button class="nav-button prev-month">&#10094;</button>
+                    <button class="nav-button next-month">&#10095;</button>
+                </div>
+            </div>
+            <table class="calendar-table">
+                <thead>
+                    <tr>
+                        <th>Sun</th>
+                        <th>Mon</th>
+                        <th>Tue</th>
+                        <th>Wed</th>
+                        <th>Thu</th>
+                        <th>Fri</th>
+                        <th>Sat</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+            <div class="event-form">
+                <input type="text" id="event-title" placeholder="Event Title">
+                <textarea id="event-description" placeholder="Event Description"></textarea>
+                <button id="add-event">Add Event</button>
+                <button id="delete-event">Delete Event</button>
+                <button id="exit-event-form">Exit</button>
+            </div>
+            <div class="date-picker-container">
+                <input type="date" class="date-picker">
+                <button id="add-event-button">Add Event</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
