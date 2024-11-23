@@ -55,7 +55,7 @@
                                                 
                                             </ul>
                                         </div>
-                            <div class="card-body">
+                            <div class="card-body"> 
                                 <div class="tab-content" id="cardTabContent">
                                     <!-- Custom Tab -->
                                     <div class="tab-pane fade show active" id="custom" role="tabpanel" aria-labelledby="custom-tab">

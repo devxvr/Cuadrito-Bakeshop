@@ -41,13 +41,156 @@
                         </div>
                     </header>
                     <div class="container-xl px-4">
-                        <div class="card mt-n10">
-                            
-                            <div class="card-body"> 
-                                
+    <div class="card mt-n10" style="background-color: #D9D9D9;">
+        <div class="card-body">
+            <div class="row">
+                <!-- First card -->
+                <div class="col-md-6">
+                    <div class="card bg-light text-black shadow-sm h-100">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="me-3">
+                                    <p class="mb-0">Senior Citizen Discount</p>
+                                </div>
+                                <div class="d-flex align-item-center">
+                                    <input type="number" class="form-control me-2" id="percentage" placeholder="0%" style="width: 90px">
+                                    <div class="form-check form-switch">
+                                        <input class="form-check-input" type="checkbox" id="toggle1">
+                                        <label class="form-check-label" for="toggle1">Off</label>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
+                </div>
+                <!-- Second card -->
+                <div class="col-md-6">
+                    <div class="card bg-light text-black shadow-sm h-100">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="me-3">
+                                    <p class="mb-0">Custom Cake Orders</p>
+                                </div>
+                                <div>
+                                    <div class="form-check form-switch">
+                                        <input class="form-check-input" type="checkbox" id="toggle2">
+                                        <label class="form-check-label" for="toggle2">Off</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <!-- Third card -->
+                <div class="col-md-6">
+                    <div class="card bg-light text-black shadow-sm h-100">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="me-3">
+                                    <p class="mb-0">PWD Discount</p>
+                                </div>
+                                <div class="d-flex align-item-center">
+                                    <input type="number" class="form-control me-2" id="percentage" placeholder="0%" style="width: 90px">
+                                    <div class="form-check form-switch">
+                                        <input class="form-check-input" type="checkbox" id="toggle1">
+                                        <label class="form-check-label" for="toggle1">Off</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Fourth card -->
+                <div class="col-md-6">
+                    <div class="card bg-light text-black shadow-sm h-100">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="me-3">
+                                    <p class="mb-0">Product Table</p>
+                                </div>
+                                <div>
+                                    <div class="form-check form-switch">
+                                        <input class="form-check-input" type="checkbox" id="toggle4">
+                                        <label class="form-check-label" for="toggle4">Off</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <!-- Fifth card -->
+                <div class="col-md-6">
+                    <div class="card bg-light text-black shadow-sm h-100">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="me-3">
+                                    <p class="mb-0">Whole Sale</p>
+                                </div>
+                                <div class="d-flex align-item-center">
+                                    <input type="number" class="form-control me-2" id="percentage" placeholder="0%" style="width: 90px">
+                                    <div class="form-check form-switch">
+                                        <input class="form-check-input" type="checkbox" id="toggle1">
+                                        <label class="form-check-label" for="toggle1">Off</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Sixth card -->
+                <div class="col-md-6">
+                    <div class="card bg-light text-black shadow-sm h-100">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="me-3">
+                                    <p class="mb-0">Seasonal Cake Sales</p>
+                                </div>
+                                <div>
+                                    <div class="form-check form-switch">
+                                        <input class="form-check-input" type="checkbox" id="toggle6">
+                                        <label class="form-check-label" for="toggle6">Off</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <!-- Seventh card -->
+                <div class="col-md-6">
+                    <div class="card bg-light text-black shadow-sm h-100">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="me-3">
+                                    <p class="mb-0">Special Offer Sales</p>
+                                </div>
+                                <div class="d-flex align-item-center">
+                                    <input type="number" class="form-control me-2" id="percentage" placeholder="0%" style="width: 90px">
+                                    <div class="form-check form-switch">
+                                        <input class="form-check-input" type="checkbox" id="toggle1">
+                                        <label class="form-check-label" for="toggle1">Off</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+   
                 </main>
                     <footer class="footer-admin mt-auto footer-light">
                         <div class="container-xl px-4">

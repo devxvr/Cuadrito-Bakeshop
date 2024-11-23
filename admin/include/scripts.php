@@ -11,3 +11,4 @@
         <script src="js/datatables/datatables-custom-regular.js"></script>
         <script src="js/datatables/datatables-product-adons.js"></script>
         <script src="js/datatables/datatables-simple-demo.js"></script>
+        <script src="js/button.deal.js"></script>
